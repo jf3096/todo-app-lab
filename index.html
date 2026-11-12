@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一个简单、轻巧的待办清单。记下事项，逐一完成，数据保存在你的浏览器。">
+  <meta name="color-scheme" content="light dark">
+  <title>我的待办 · Todo</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="brand-bar">
+      <a class="brand" href="./" aria-label="Todo 首页"><span class="brand-mark" aria-hidden="true">✓</span> Todo</a>
+      <span class="brand-note">少一点杂乱，多一点完成。</span>
+    </header>
+
+    <main>
+      <header class="intro">
+        <p class="date" id="today"></p>
+        <h1>我的待办<span class="heading-dot">.</span></h1>
+        <p class="subtitle">把想做的事记下来，一件一件慢慢完成。</p>
+      </header>
+
+      <section class="workspace" aria-label="待办清单">
+        <form id="task-form" novalidate>
+          <label for="task-input">新待办事项</label>
+          <div class="input-row">
+            <input id="task-input" name="task" type="text" maxlength="200" placeholder="接下来，你想做什么？" autocomplete="off" aria-describedby="input-hint notice">
+            <button class="add-button" type="submit"><span aria-hidden="true">＋</span> 添加</button>
+          </div>
+          <p class="input-hint" id="input-hint">按 Enter 添加，最多 200 个字符。</p>
+          <p class="notice" id="notice" role="alert" hidden></p>
+        </form>
+
+        <div class="list-toolbar">
+          <div class="filters" role="group" aria-label="筛选事项">
+            <button type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button type="button" data-filter="active" aria-pressed="false">未完成</button>
+            <button type="button" data-filter="completed" aria-pressed="false">已完成</button>
+          </div>
+          <span class="remaining" data-testid="remaining" id="remaining" aria-live="polite">0 项待完成</span>
+        </div>
+
+        <ul id="task-list" class="task-list" aria-label="事项"></ul>
+        <div class="empty-state" id="empty-state">
+          <span class="empty-mark" aria-hidden="true">✓</span>
+          <h2 id="empty-title">从一件小事开始</h2>
+          <p id="empty-description">在上方写下你的第一条待办。</p>
+        </div>
+        <div class="list-footer">
+          <span id="completed-count">已完成 0 项</span>
+          <span>每完成一件，都值得肯定。</span>
+        </div>
+      </section>
+      <p class="privacy" id="storage-status">自动保存在当前浏览器，不上传、不跨设备同步。</p>
+      <noscript><p class="notice">请启用 JavaScript，才能添加和管理待办事项。</p></noscript>
+      <p class="sr-only" id="announcement" role="status"></p>
+    </main>
+
+    <footer class="page-footer"><span>简单记录，专注当下。</span><a href="https://github.com/jf3096/todo-app-lab">查看源码 ↗</a></footer>
+  </div>
+</body>
+</html>
