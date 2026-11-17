@@ -1,0 +1,20 @@
+
+Running 11 tests using 2 workers
+
+  ok  1 tests\todo.spec.cjs:9:1 › serves the app and rejects whitespace-only tasks (845ms)
+  ok  2 tests\todo.spec.cjs:19:1 › adds, persists, completes, filters, restores and deletes a task (1.4s)
+  ok  3 tests\todo.spec.cjs:49:1 › treats user input as text and keeps other tasks when deleting (556ms)
+  ok  5 tests\todo.spec.cjs:69:1 › rejects invalid stored task shapes without crashing (405ms)
+  ok  4 tests\todo.spec.cjs:60:1 › reports malformed stored data without silently overwriting it (522ms)
+  ok  6 tests\todo.spec.cjs:76:1 › remains usable and warns when browser storage is unavailable (571ms)
+  ok  7 tests\todo.spec.cjs:87:1 › preserves saved tasks when a later write exceeds browser storage capacity (652ms)
+  ok  8 tests\todo.spec.cjs:103:5 › readable controls and long text at 375px in light mode (980ms)
+  ok  9 tests\todo.spec.cjs:103:5 › readable controls and long text at 1280px in light mode (1.0s)
+  ok 10 tests\todo.spec.cjs:103:5 › readable controls and long text at 375px in dark mode (1.1s)
+  ok 11 tests\todo.spec.cjs:103:5 › readable controls and long text at 1280px in dark mode (1.0s)
+
+  11 passed (6.3s)
+(node:30504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

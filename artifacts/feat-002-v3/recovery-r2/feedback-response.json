@@ -1,0 +1,49 @@
+{
+  "captured_at": "2026-11-17T13:20:00.635Z",
+  "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "revision": 2,
+  "original_scope_receipt": {
+    "immutable_url": "https://github.com/jf3096/todo-app-lab/blob/3c1d2b5ee7f8103656dd1304b1e7ad7314676c65/artifacts/feat-002-v3/operation-scope-receipt.json",
+    "previous_incorrect_sha256": "10e2ea4851e40e83926d0607b0a75612cfda77043942facc680139039fb85135",
+    "corrected_sha256": "12a907fee04513406a39e16f4a7afcdb96bd1c7b3f9cb98e4bdb6021add5dd04",
+    "git_blob_matches_remote_raw_bytes": true
+  },
+  "feedback_responses": [
+    {
+      "feedback_id": "feat-002-sop1-fb-scope-receipt-hash",
+      "action": "Correct the hash mapping without changing the original immutable receipt or earlier records.",
+      "result": "12a907fee04513406a39e16f4a7afcdb96bd1c7b3f9cb98e4bdb6021add5dd04",
+      "awaiting_independent_closure": true
+    },
+    {
+      "feedback_id": "feat-002-sop1-fb-user-data-scope-route",
+      "action": "Apply card revision 2 and its explicit recovery decision; verify only this round using a clean candidate worktree, fresh synthetic browser context, network observations and owned-service cleanup.",
+      "routing_source": "https://github.com/jf3096/todo-app-lab/issues/12#issuecomment-6948845689",
+      "historical_negative_proof": "Not claimed and not required by revision 2; prohibition on real-user-data access remains unchanged.",
+      "awaiting_independent_closure": true
+    }
+  ],
+  "handoff": {
+    "current_behavior": "Synthetic todo persists after add and reload, but the list has no creation date/time; persisted fields are id, text and completed.",
+    "scope": "Investigation only; no product implementation.",
+    "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+    "baseline_frozen": false,
+    "risks": [
+      "Time format, timezone and legacy missing-time presentation require prototype discussion and human confirmation.",
+      "This evidence establishes only the current candidate and this round, not all historical activity."
+    ],
+    "unresolved": [
+      "New independent verifier must review all AC and close both open feedback items.",
+      "Do not enter implementation before prototype confirmation or skip final human PR review."
+    ],
+    "cleanup": {
+      "port_open_before": false,
+      "self_started_npm_pid": 92028,
+      "synthetic_context_closed": true,
+      "stop_exit_code": 0,
+      "stop_target": "Only the npm PID created by this script and its descendants",
+      "port_open_after": false,
+      "service_log": "npm warn Unknown user config \"home\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\n\n> todo-app-lab@1.0.0 start\n> node scripts/serve.cjs\n\nTodo preview: http://127.0.0.1:4173/\n"
+    }
+  }
+}

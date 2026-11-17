@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-11-17T13:21:22.049Z",
+  "algorithm": "SHA-256",
+  "files": {
+    "report.md": "2d3e86d792af3fa0cb8772a9ff3bdb9aed0032770b7414321073aed15ef8cdbd",
+    "replay.json": "ac2f611a9b98d0981d02ea821f1aa86b610e91d156eec113cf7f0ef5e0f7de07",
+    "feedback-response.json": "0d1e1b2ed4e83b180b623ca77d6d5f26098f0effad9d5a9c404e7317a1561c24",
+    "regression.txt": "6c47e11aba558bb4438ee06086681d93f7aae53980975c5f389d6eb34288cb0d",
+    "after-reload.png": "71526a7159b5a0dfbbf7532d1eef8924471e390dadfc2932c6e928131645c1a1"
+  }
+}

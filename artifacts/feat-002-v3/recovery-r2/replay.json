@@ -1,0 +1,123 @@
+{
+  "schema": "feat-002.sop1.recovery-evidence/v1",
+  "started_at": "2026-11-17T13:19:42.798Z",
+  "executor_id": "01a1e8ef-c296-7890-8bf9-59c95d55fbfc",
+  "revision": 2,
+  "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "baseline_head": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "baseline_status_before": "",
+  "remote_main": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "environment": {
+    "os": "win32",
+    "node": "v26.13.0",
+    "playwright": "1.65.0",
+    "browser_executable": "C:/Users/KSG/AppData/Local/ms-playwright/chromium-1248/chrome-win64/chrome.exe",
+    "entry": "http://127.0.0.1:4173/",
+    "synthetic_input": "v3-created-at-check",
+    "browser_version": "156.0.8078.4"
+  },
+  "parent": 11,
+  "pages_build": {
+    "commit": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+    "status": "built",
+    "created_at": "2026-11-16T10:08:01Z"
+  },
+  "deployment": {
+    "id": 7821008060,
+    "sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+    "environment": "github-pages"
+  },
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/app.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/app.js",
+      "method": "GET"
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "cleanup": {
+    "port_open_before": false,
+    "self_started_npm_pid": 92028,
+    "synthetic_context_closed": true,
+    "stop_exit_code": 0,
+    "stop_target": "Only the npm PID created by this script and its descendants",
+    "port_open_after": false,
+    "service_log": "npm warn Unknown user config \"home\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.\n\n> todo-app-lab@1.0.0 start\n> node scripts/serve.cjs\n\nTodo preview: http://127.0.0.1:4173/\n"
+  },
+  "http_status": 200,
+  "initial": {
+    "captured_at": "2026-11-17T13:19:48.732Z",
+    "tasks": [],
+    "local_storage": {},
+    "session_storage": {},
+    "cookie": ""
+  },
+  "after_add": {
+    "captured_at": "2026-11-17T13:19:48.828Z",
+    "tasks": [
+      {
+        "text": "v3-created-at-check\n删除",
+        "html": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"562cc3c1-65d4-4ae1-84ec-bb99b8e5af80\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"562cc3c1-65d4-4ae1-84ec-bb99b8e5af80\">删除</button></li>",
+        "time_count": 0,
+        "data_created_at_count": 0,
+        "class_count": 0
+      }
+    ],
+    "local_storage": {
+      "todo-app-lab.tasks.v1": "[{\"id\":\"562cc3c1-65d4-4ae1-84ec-bb99b8e5af80\",\"text\":\"v3-created-at-check\",\"completed\":false}]"
+    },
+    "session_storage": {},
+    "cookie": ""
+  },
+  "after_reload": {
+    "captured_at": "2026-11-17T13:19:48.884Z",
+    "tasks": [
+      {
+        "text": "v3-created-at-check\n删除",
+        "html": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"562cc3c1-65d4-4ae1-84ec-bb99b8e5af80\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"562cc3c1-65d4-4ae1-84ec-bb99b8e5af80\">删除</button></li>",
+        "time_count": 0,
+        "data_created_at_count": 0,
+        "class_count": 0
+      }
+    ],
+    "local_storage": {
+      "todo-app-lab.tasks.v1": "[{\"id\":\"562cc3c1-65d4-4ae1-84ec-bb99b8e5af80\",\"text\":\"v3-created-at-check\",\"completed\":false}]"
+    },
+    "session_storage": {},
+    "cookie": ""
+  },
+  "screenshot_captured_at": "2026-11-17T13:19:48.886Z",
+  "screenshot_sha256": "71526a7159b5a0dfbbf7532d1eef8924471e390dadfc2932c6e928131645c1a1",
+  "cookies_after": [],
+  "external_requests": [],
+  "regression": {
+    "exit_code": 0,
+    "signal": null,
+    "error": null,
+    "log": "regression.txt"
+  },
+  "conclusion": "GAP_CONFIRMED",
+  "baseline_status_after": "",
+  "baseline_product_diff": "",
+  "finished_at": "2026-11-17T13:20:00.217Z"
+}
