@@ -1,0 +1,40 @@
+{
+  "reviewer_id": "01a1e95e-2785-7ec3-b768-1978540a87b2",
+  "revision": 2,
+  "visual": {
+    "file": "after-reload.png",
+    "sha256": "71526a7159b5a0dfbbf7532d1eef8924471e390dadfc2932c6e928131645c1a1",
+    "captured_at": "2026-11-17T13:30:53.651Z",
+    "reviewed_at": "2026-11-17T13:31:28.1267168Z",
+    "reviewed_at_source": "Host UTC clock read in the same tool invocation immediately after opening the current screenshot with view_image.",
+    "width": 1280,
+    "theme": "light",
+    "observations": [
+      "The header, large title, white task panel and footer fit within the viewport without visible horizontal clipping.",
+      "The single synthetic task appears on one line with its checkbox at the left and a visibly bordered delete button at the right.",
+      "Task text and controls are separated and aligned; no overlap is visible in this state.",
+      "The date above the page title is not a per-task creation time; no date or time appears within the task row."
+    ],
+    "scope": "Current 1280px light screenshot only. No blanket visual PASS or human approval is asserted. Existing layout tests are functional assertions, not human visual approval.",
+    "issues": []
+  },
+  "feedback_recheck": [
+    {
+      "feedback_id": "feat-002-sop1-fb-scope-receipt-hash",
+      "result": "CLOSED",
+      "basis": "Fetched immutable original receipt bytes, compared them with the Git blob and the new submission mapping. All equal 12a907fee04513406a39e16f4a7afcdb96bd1c7b3f9cb98e4bdb6021add5dd04. Historical file and report remain unchanged."
+    },
+    {
+      "feedback_id": "feat-002-sop1-fb-user-data-scope-route",
+      "result": "CLOSED",
+      "basis": "Read current revision-2 card, accepted recovery event and linked impact report. Independently checked current product diff, synthetic browser storage, requests, owned-service cleanup and cold-start handoff. Unlimited historical negative proof is outside the card and is not asserted."
+    }
+  ],
+  "preflight_issue": "First reviewer script invocation failed before execution because Windows ESM import used a drive path rather than a file URL. Corrected only the review script; no browser, service or product mutation occurred in that failed invocation.",
+  "handoff": {
+    "investigation_result": "GAP_CONFIRMED at 6b2d3cc987b09a05d85276d2f36b02be85a67040; task add/reload works, but per-task creation time is absent.",
+    "not_implemented": true,
+    "pending_product_choices": ["readable date/time format", "timezone", "legacy tasks without timestamps"],
+    "boundary": "Investigation approval does not approve prototype or implementation, complete the card, freeze the baseline, merge or deploy. The executor remains responsible for the separate completion gate. Historical reports are preserved."
+  }
+}

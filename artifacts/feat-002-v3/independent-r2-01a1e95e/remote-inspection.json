@@ -1,0 +1,77 @@
+{
+  "checked_started_at": "2026-11-17T13:29:07.024Z",
+  "reviewer_id": "01a1e95e-2785-7ec3-b768-1978540a87b2",
+  "submission_id": "feat-002-sop1-r2-submission-ceff34ba341a",
+  "comment_created_at": "2026-11-17T13:23:39Z",
+  "items": [
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/ceff34ba341abf39038ee035bb72db728884c1a9/artifacts/feat-002-v3/recovery-r2/replay.json",
+      "checked_at": "2026-11-17T13:29:07.799Z",
+      "http": 200,
+      "bytes": 4385,
+      "expected_sha256": "ac2f611a9b98d0981d02ea821f1aa86b610e91d156eec113cf7f0ef5e0f7de07",
+      "raw_sha256": "ac2f611a9b98d0981d02ea821f1aa86b610e91d156eec113cf7f0ef5e0f7de07",
+      "git_blob_sha256": "ac2f611a9b98d0981d02ea821f1aa86b610e91d156eec113cf7f0ef5e0f7de07",
+      "match": true
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/ceff34ba341abf39038ee035bb72db728884c1a9/artifacts/feat-002-v3/recovery-r2/report.md",
+      "checked_at": "2026-11-17T13:29:08.140Z",
+      "http": 200,
+      "bytes": 6856,
+      "expected_sha256": "2d3e86d792af3fa0cb8772a9ff3bdb9aed0032770b7414321073aed15ef8cdbd",
+      "raw_sha256": "2d3e86d792af3fa0cb8772a9ff3bdb9aed0032770b7414321073aed15ef8cdbd",
+      "git_blob_sha256": "2d3e86d792af3fa0cb8772a9ff3bdb9aed0032770b7414321073aed15ef8cdbd",
+      "match": true
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/ceff34ba341abf39038ee035bb72db728884c1a9/artifacts/feat-002-v3/recovery-r2/regression.txt",
+      "checked_at": "2026-11-17T13:29:08.484Z",
+      "http": 200,
+      "bytes": 1520,
+      "expected_sha256": "6c47e11aba558bb4438ee06086681d93f7aae53980975c5f389d6eb34288cb0d",
+      "raw_sha256": "6c47e11aba558bb4438ee06086681d93f7aae53980975c5f389d6eb34288cb0d",
+      "git_blob_sha256": "6c47e11aba558bb4438ee06086681d93f7aae53980975c5f389d6eb34288cb0d",
+      "match": true
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/ceff34ba341abf39038ee035bb72db728884c1a9/artifacts/feat-002-v3/recovery-r2/sha256-manifest.json",
+      "checked_at": "2026-11-17T13:29:08.824Z",
+      "http": 200,
+      "bytes": 543,
+      "expected_sha256": "80ba29dfa444b4ca57234d1dc7d5db3005668ee9b2e23d4cfe8ec79c680e0f25",
+      "raw_sha256": "80ba29dfa444b4ca57234d1dc7d5db3005668ee9b2e23d4cfe8ec79c680e0f25",
+      "git_blob_sha256": "80ba29dfa444b4ca57234d1dc7d5db3005668ee9b2e23d4cfe8ec79c680e0f25",
+      "match": true
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/3c1d2b5ee7f8103656dd1304b1e7ad7314676c65/artifacts/feat-002-v3/operation-scope-receipt.json",
+      "checked_at": "2026-11-17T13:29:09.201Z",
+      "http": 200,
+      "bytes": 1274,
+      "expected_sha256": "12a907fee04513406a39e16f4a7afcdb96bd1c7b3f9cb98e4bdb6021add5dd04",
+      "raw_sha256": "12a907fee04513406a39e16f4a7afcdb96bd1c7b3f9cb98e4bdb6021add5dd04",
+      "git_blob_sha256": "12a907fee04513406a39e16f4a7afcdb96bd1c7b3f9cb98e4bdb6021add5dd04",
+      "match": true
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/ceff34ba341abf39038ee035bb72db728884c1a9/artifacts/feat-002-v3/recovery-r2/feedback-response.json",
+      "checked_at": "2026-11-17T13:29:09.553Z",
+      "http": 200,
+      "bytes": 2818,
+      "expected_sha256": "0d1e1b2ed4e83b180b623ca77d6d5f26098f0effad9d5a9c404e7317a1561c24",
+      "raw_sha256": "0d1e1b2ed4e83b180b623ca77d6d5f26098f0effad9d5a9c404e7317a1561c24",
+      "git_blob_sha256": "0d1e1b2ed4e83b180b623ca77d6d5f26098f0effad9d5a9c404e7317a1561c24",
+      "match": true
+    }
+  ],
+  "checked_finished_at": "2026-11-17T13:29:09.554Z",
+  "screenshot": {
+    "url": "https://raw.githubusercontent.com/jf3096/todo-app-lab/ceff34ba341abf39038ee035bb72db728884c1a9/artifacts/feat-002-v3/recovery-r2/after-reload.png",
+    "http": 200,
+    "checked_at": "2026-11-17T13:32:39.679Z",
+    "sha256": "71526a7159b5a0dfbbf7532d1eef8924471e390dadfc2932c6e928131645c1a1",
+    "matches_manifest": true,
+    "matches_current_screenshot": true
+  }
+}
