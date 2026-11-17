@@ -1,0 +1,106 @@
+{
+  "id": "feat-002-sop32-submission-31df4340a403",
+  "type": "submit",
+  "actor": {
+    "role": "executor",
+    "id": "01a1e9e5-8301-7ca2-ac10-2c459a9cd6ad"
+  },
+  "submission": {
+    "id": "feat-002-sop32-submission-31df4340a403",
+    "executor_id": "01a1e9e5-8301-7ca2-ac10-2c459a9cd6ad",
+    "revision": 1,
+    "result": "SOP-3.2 technical review is committed on an isolated evidence branch. The public prototype and its frozen preview resources match byte-for-byte; synthetic interaction, data, error, cleanup and responsive runtime checks passed. Original-image visual review remains CANNOT_VERIFY because the image bridge returned no visible image block. Human confirmation remains pending; no human approval, independent PASS, implementation or downstream transition is claimed.",
+    "created_at": "2026-11-17T14:44:28.000Z",
+    "artifact": {
+      "commit_sha": "31df4340a403ead9e6893589ff80a53aab9506cf",
+      "changed_at": "2026-11-17T14:42:23.000Z",
+      "version": "31df4340a403ead9e6893589ff80a53aab9506cf"
+    },
+    "checks": [
+      {
+        "ac_id": "AC-01",
+        "status": "PASS",
+        "evidence": [
+          {
+            "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/evidence/result.json",
+            "artifact_version": "31df4340a403ead9e6893589ff80a53aab9506cf",
+            "sha256": "bc78d883ac71724893677d3d7c9d44b82eedaff39bdf7015c19811ceb35aaa2a",
+            "captured_at": "2026-11-17T14:44:28.000Z",
+            "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; fresh non-persistent zh-CN context; Asia/Shanghai; synthetic localStorage only.",
+            "action": "Opened the current child card and dependency report, fetched all three public preview resources, and exercised add, reload, legacy, invalid-time, input, completion, filtering, deletion and blocked-storage paths.",
+            "observed": "All three public resources returned HTTP 200 and matched their frozen preview blobs. A synthetic task showed its local creation time and stored UTC datetime; reload preserved both. Legacy and invalid times were distinct and preserved, input validation worked, complete/filter/delete passed, and blocked storage stayed temporarily usable.",
+            "accessible": true,
+            "kind": "report"
+          },
+          {
+            "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/report.md",
+            "artifact_version": "31df4340a403ead9e6893589ff80a53aab9506cf",
+            "sha256": "762a60e659d54404124ced2deff2af865ff762996d54dc3db8185ab3e7608bac",
+            "captured_at": "2026-11-17T14:44:28.000Z",
+            "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; fresh non-persistent contexts; synthetic data only.",
+            "action": "Read the current technical report and compared its source mapping, actual observations and unresolved items with the machine evidence.",
+            "observed": "The report correctly maps the public resources to previews/pr-10/2e88373/* rather than repository-root product files and keeps the visual and human items unresolved.",
+            "accessible": true,
+            "kind": "report"
+          }
+        ]
+      },
+      {
+        "ac_id": "AC-02",
+        "status": "CANNOT_VERIFY",
+        "evidence": [
+          {
+            "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/report.md",
+            "artifact_version": "31df4340a403ead9e6893589ff80a53aab9506cf",
+            "sha256": "762a60e659d54404124ced2deff2af865ff762996d54dc3db8185ab3e7608bac",
+            "captured_at": "2026-11-17T14:44:28.000Z",
+            "environment": "Windows; tools.view_image; functions.exec image bridge; Chrome image tab.",
+            "action": "Attempted to open the four current PNGs through view_image using the PNG signature-corrected data URL and through an opened image tab.",
+            "observed": "The corrected data URL retained the iVBORw0KGgo PNG signature but functions.exec emitted no visible image block. The image tab then returned No tab and browser selection was unavailable. No visual conclusion is claimed.",
+            "accessible": true,
+            "kind": "report"
+          }
+        ]
+      },
+      {
+        "ac_id": "AC-03",
+        "status": "EXTERNAL_PENDING",
+        "evidence": []
+      },
+      {
+        "ac_id": "AC-04",
+        "status": "PASS",
+        "evidence": [
+          {
+            "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/report.md",
+            "artifact_version": "31df4340a403ead9e6893589ff80a53aab9506cf",
+            "sha256": "762a60e659d54404124ced2deff2af865ff762996d54dc3db8185ab3e7608bac",
+            "captured_at": "2026-11-17T14:44:28.000Z",
+            "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; isolated review evidence branch.",
+            "action": "Checked the commit diff and report, used only synthetic browser data, and verified that no product, root, preview or hosting files were changed.",
+            "observed": "The evidence commit changes only artifacts/feat-002-v3/prototype-review/** and includes the complete confirmation list, file and test plan, exclusions, risks and human boundary.",
+            "accessible": true,
+            "kind": "report"
+          }
+        ]
+      }
+    ],
+    "feedback_responses": [],
+    "blocker": {
+      "kind": "environment",
+      "reason": "Current-session original-image visual review is unavailable after PNG signature correction; AC-02 cannot be claimed as PASS.",
+      "evidence": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/report.md#visual-blocking"
+    },
+    "risks": [
+      "Original-image visual review is not available in this execution session; AC-02 remains CANNOT_VERIFY.",
+      "The public preview differs from the prototype candidate source in title, time-node semantics and task-details spacing; the review object is the public preview.",
+      "Human approval for the current public version and scope remains pending.",
+      "This submission is not an independent PASS or authorization for SOP-4.1."
+    ],
+    "inner": {
+      "outcome": "halted",
+      "iterations": 2,
+      "minutes": 24
+    }
+  }
+}

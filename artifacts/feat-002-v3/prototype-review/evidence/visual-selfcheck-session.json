@@ -1,0 +1,41 @@
+{
+  "schema": "feat-002.sop3.2-visual-selfcheck/v1",
+  "card_url": "https://github.com/jf3096/todo-app-lab/issues/14",
+  "submission_url": "https://github.com/jf3096/todo-app-lab/issues/14#issuecomment-6951379620",
+  "artifact_version": "31df4340a403ead9e6893589ff80a53aab9506cf",
+  "session_id": "01a1ea14-69e5-7592-ac32-3ca6e439a2c6",
+  "executor_id": "01a1e9e5-8301-7ca2-ac10-2c459a9cd6ad",
+  "started_at": "2026-11-17T15:16:08.905374Z",
+  "completed_at": "2026-11-17T15:16:45.000Z",
+  "command": "PowerShell string prompt through stdin; codex exec -C <current-worktree> -s danger-full-access -c approval_policy=never --color never --json -i <four current PNG paths> -o <raw-result>",
+  "images": [
+    {
+      "path": "artifacts/feat-002-v3/prototype-review/evidence/todo-375-light.png",
+      "width": 375,
+      "height": 1128,
+      "sha256": "0ad6d4912cc385760df659543a70a262bac9219f058c316dfb65b0c7d504cfa7"
+    },
+    {
+      "path": "artifacts/feat-002-v3/prototype-review/evidence/todo-375-dark.png",
+      "width": 375,
+      "height": 1128,
+      "sha256": "3e1f6506a3f870570fc50b9b37fcfc0cf7ae6901457efb3423b6a49726ac9403"
+    },
+    {
+      "path": "artifacts/feat-002-v3/prototype-review/evidence/todo-1280-light.png",
+      "width": 1280,
+      "height": 1044,
+      "sha256": "92465ede56521c2e465c0c07f64f4ea10da2ed19cc882a188bb4a24aa5e22dad"
+    },
+    {
+      "path": "artifacts/feat-002-v3/prototype-review/evidence/todo-1280-dark.png",
+      "width": 1280,
+      "height": 1044,
+      "sha256": "5327f518c89cffeb9e9893f193ff45d7d3c9b07bbd300d5ca8af04fc9dd2e411"
+    }
+  ],
+  "raw_result": "artifacts/feat-002-v3/prototype-review/evidence/visual-selfcheck-final.md",
+  "raw_result_sha256": "ecd96b1cfb1526f93455f2f78ccf0f0cfc8bfa734e774a5794dfb67dc9614531",
+  "observation": "Four images were visible. Hierarchy, boundaries, readable title/time, discoverability and absence of horizontal overflow were reported. A recurring P2 was reported for long-task checkbox/delete controls being vertically centered away from the first title line. A separate P3 reported faint dark-theme delete controls and secondary text, with contrast not established from screenshots.",
+  "status_effect": "No visual PASS. AC-02 remains unresolved until the P2 is closed and the updated current screenshots are visually reviewed."
+}
