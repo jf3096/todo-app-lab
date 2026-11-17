@@ -1,0 +1,93 @@
+{
+  "schema": "feat-002.sop3.2-independent-review/v1",
+  "started_at": "2026-11-17T14:58:10.139Z",
+  "finished_at": "2026-11-17T14:58:29.579Z",
+  "verifier_id": "01a1e9fa-81d5-74d2-aed6-f6bc88ca7d70",
+  "host_session_id": "01a1e24d-8b18-7440-9947-49552d981156",
+  "card_url": "https://github.com/jf3096/todo-app-lab/issues/14",
+  "submission_url": "https://github.com/jf3096/todo-app-lab/issues/14#issuecomment-6951379620",
+  "dependency_url": "https://github.com/jf3096/todo-app-lab/issues/13#issuecomment-6950520107",
+  "artifact_version": "31df4340a403ead9e6893589ff80a53aab9506cf",
+  "public_url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/",
+  "source_hashes": [
+    {
+      "file": "index.html",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/index.html",
+      "status": 200,
+      "bytes": 3224,
+      "public_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "frozen_preview_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "public_matches_preview": true
+    },
+    {
+      "file": "app.js",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/app.js",
+      "status": 200,
+      "bytes": 6929,
+      "public_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "frozen_preview_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "public_matches_preview": true
+    },
+    {
+      "file": "styles.css",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/styles.css",
+      "status": 200,
+      "bytes": 6806,
+      "public_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "frozen_preview_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "public_matches_preview": true
+    }
+  ],
+  "interactions": {
+    "initial_storage": null,
+    "whitespace_error": "请输入 1 到 200 个字符的待办事项。",
+    "whitespace_rows": 0,
+    "created": {
+      "visible": "创建于 2026/11/17 22:58",
+      "datetime": "2026-11-17T14:58:16.322Z",
+      "stored_created_at": "2026-11-17T14:58:16.322Z",
+      "visible_matches_stored": true
+    },
+    "reload": {
+      "storage_equal": true,
+      "visible": "创建于 2026/11/17 22:58",
+      "datetime": "2026-11-17T14:58:16.322Z"
+    },
+    "complete_filter_delete": "PASS",
+    "legacy": {
+      "visible": "创建时间未知",
+      "datetime": null
+    },
+    "invalid": {
+      "visible": "创建时间无效",
+      "datetime": null,
+      "stored": "[{\"id\":\"invalid\",\"text\":\"无效时间\",\"completed\":false,\"createdAt\":\"not-a-date\"}]"
+    },
+    "external_requests": [],
+    "storage_error": {
+      "notice": "无法读取浏览器存储。仍可临时使用，刷新后本次更改将丢失。",
+      "status": "当前为临时模式，刷新后本次更改将丢失。",
+      "rows": 1
+    }
+  },
+  "visual_review": {
+    "status": "CANNOT_VERIFY",
+    "reason": "The four current PNG files were valid and hash-matched, but no image block became visible through the local_image or explicit image/png data URL paths.",
+    "files": [
+      { "file": "todo-375-light.png", "bytes": 44245, "sha256": "0ad6d4912cc385760df659543a70a262bac9219f058c316dfb65b0c7d504cfa7" },
+      { "file": "todo-375-dark.png", "bytes": 44326, "sha256": "3e1f6506a3f870570fc50b9b37fcfc0cf7ae6901457efb3423b6a49726ac9403" },
+      { "file": "todo-1280-light.png", "bytes": 55364, "sha256": "92465ede56521c2e465c0c07f64f4ea10da2ed19cc882a188bb4a24aa5e22dad" },
+      { "file": "todo-1280-dark.png", "bytes": 54792, "sha256": "5327f518c89cffeb9e9893f193ff45d7d3c9b07bbd300d5ca8af04fc9dd2e411" }
+    ]
+  },
+  "browser": {
+    "engine": "Chromium",
+    "version": "156.0.8078.4",
+    "playwright": "1.65.0"
+  },
+  "cleanup": {
+    "browser_closed": true,
+    "contexts_closed": true,
+    "owned_server_started": false
+  }
+}
