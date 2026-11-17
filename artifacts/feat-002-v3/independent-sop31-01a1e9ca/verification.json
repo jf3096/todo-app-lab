@@ -1,0 +1,59 @@
+{
+  "schema": "issue-card.verification-evidence/v3",
+  "checked_at": "2026-11-17T14:01:53.7991929Z",
+  "card": {
+    "repo": "jf3096/todo-app-lab",
+    "root_issue": 11,
+    "child_issue": 13,
+    "step": "3.1",
+    "revision": 1,
+    "submission_id": "feat-002-sop31-submission-5ba90f604f52",
+    "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
+    "submission_url": "https://github.com/jf3096/todo-app-lab/issues/13#issuecomment-6950064402"
+  },
+  "reviewer_id": "01a1e9ca-ab55-7021-816b-30b0f16680d3",
+  "observations": {
+    "submission": "Read the child card, native root relationship, exact submission comment, dependency #12 report, current branch history and current prototype files. The submission is bound to 5ba90f604f52c215c227c294ad44667a50342893, whose parent is frozen baseline 6b2d3cc987b09a05d85276d2f36b02be85a67040; its changes are confined to artifacts/feat-002-v3/prototype/**.",
+    "publicEntry": "Fetched all three public preview resources. index.html, app.js and styles.css each returned HTTP 200 and byte-for-byte matched the frozen Git blobs and declared SHA-256 values; no publication or overwrite was found.",
+    "runtime": "Ran verify.mjs in an isolated worktree with fresh non-persistent Chromium contexts and synthetic localStorage. The add path showed 创建于 2026/11/17 21:59; reload retained the same stored bytes and visible time. Legacy missing time rendered 创建时间未知; invalid time rendered 创建时间无效; whitespace remained empty; complete, filters, delete, empty state and blocked-storage temporary mode worked; no external requests occurred.",
+    "visual": "Opened the four freshly captured PNG files at original detail. At 375px light and dark, titles wrap inside the details column above readable timestamps, checkbox and separately bordered delete control remain distinct, and scrollWidth equals innerWidth. At 1280px light and dark, the centered workspace has clear title/time hierarchy, stable spacing, visible controls and no horizontal clipping. No P0-P2 visual issue was found. The design does not add a demo time control, locale selector, test-data entry or other demo tooling.",
+    "design": "design.md covers local timezone and zh-CN 24-hour minute display, UTC ISO storage, legacy missing data, invalid values, storage failure, empty and input states, long text, file plan, regression plan, non-goals and pending SOP-3.2 discussion. It does not claim human approval or product implementation.",
+    "cleanup": "The verification-owned local server on port 9816 was closed and read back. Only synthetic browser data was used. The isolated worktree contains verification output; product source and existing preview files were not modified."
+  },
+  "checks": [
+    {
+      "ac_id": "AC-01",
+      "status": "PASS",
+      "action": "Opened the current card and exact submission, then independently fetched the public prototype entry and compared all three resource bytes with the frozen commit blobs.",
+      "observed": "The public candidate is reachable and operable, all resources match the frozen source hashes, and the current submission adds design/evidence only without republishing or overwriting an existing preview.",
+      "evidence": []
+    },
+    {
+      "ac_id": "AC-02",
+      "status": "PASS",
+      "action": "Ran fresh browser paths at 375px and 1280px in light and dark themes, generated current screenshots, then opened each image at original detail and inspected layout and controls.",
+      "observed": "Titles and timestamps are readable, controls are distinct and operable, long text stays inside the layout, and document scrollWidth equals viewport width in all four states; no demo tooling is present.",
+      "evidence": []
+    },
+    {
+      "ac_id": "AC-03",
+      "status": "PASS",
+      "action": "Read the design proposal and exercised its stated data and failure behavior, comparing each required UI, interaction, time, legacy, invalid, storage, empty, input, non-goal, risk, file and test-plan topic with actual results.",
+      "observed": "Every requested design topic has a concrete recommendation and observable behavior; SOP-3.2 timezone, legacy-data, scope and test-plan discussion remains correctly pending rather than self-approved.",
+      "evidence": []
+    },
+    {
+      "ac_id": "AC-04",
+      "status": "PASS",
+      "action": "Checked the exact commit diff and immutable artifact bytes, used isolated synthetic browser storage, closed the verification-owned server, and confirmed the handoff states the remaining human discussion boundary.",
+      "observed": "Evidence is reachable from a new session, bound to the exact commit and actual timestamps/hashes, only prototype design/evidence changed, temporary resources are clean, and the next stage can cold-start without inheriting an approval.",
+      "evidence": []
+    }
+  ],
+  "feedback": [],
+  "closed_feedback": [],
+  "progress": [],
+  "limits": [
+    "SOP-3.1 independent technical verification only; SOP-3.2 human discussion and approval remain pending."
+  ]
+}
