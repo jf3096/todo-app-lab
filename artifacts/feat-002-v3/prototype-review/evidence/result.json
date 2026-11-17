@@ -1,0 +1,587 @@
+{
+  "schema": "feat-002.sop3.2-prototype-review/v1",
+  "started_at": "2026-11-17T14:28:38.822Z",
+  "executor_id": "01a1e9e5-8301-7ca2-ac10-2c459a9cd6ad",
+  "host_session_id": "01a1e24d-8b18-7440-9947-49552d981156",
+  "card_url": "https://github.com/jf3096/todo-app-lab/issues/14",
+  "dependency_url": "https://github.com/jf3096/todo-app-lab/issues/13#issuecomment-6950520107",
+  "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
+  "public_url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/",
+  "source_hashes": [
+    {
+      "file": "index.html",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/index.html",
+      "status": 200,
+      "bytes": 3224,
+      "public_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "frozen_preview_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "prototype_source_sha256": "8289d1a0e074438f3efaa5f163ddb66e4d25d1f66736da0bd78a688f7e0de3fb",
+      "public_matches_preview": true,
+      "public_matches_prototype_source": false
+    },
+    {
+      "file": "app.js",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/app.js",
+      "status": 200,
+      "bytes": 6929,
+      "public_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "frozen_preview_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "prototype_source_sha256": "61c8de8061b52c4b8df501a62ad660e0b7048cf6a5aaab0c126c9182813feb85",
+      "public_matches_preview": true,
+      "public_matches_prototype_source": false
+    },
+    {
+      "file": "styles.css",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/styles.css",
+      "status": 200,
+      "bytes": 6806,
+      "public_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "frozen_preview_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "prototype_source_sha256": "83ee814c2d8246ef44389bc3b04aae58416f0194e747f7043d5015013824c561",
+      "public_matches_preview": true,
+      "public_matches_prototype_source": false
+    }
+  ],
+  "source_drift": {
+    "index.html": "prototype source differs from published preview; public version is the review object",
+    "app.js": "prototype source differs from published preview; public version is the review object",
+    "styles.css": "prototype source differs from published preview; public version is the review object"
+  },
+  "interactions": {
+    "initial_storage": null,
+    "whitespace_error": "请输入 1 到 200 个字符的待办事项。",
+    "whitespace_rows": 0,
+    "created": {
+      "visible": "创建于 2026/11/17 22:28",
+      "datetime": "2026-11-17T14:28:45.011Z",
+      "stored_created_at": "2026-11-17T14:28:45.011Z",
+      "visible_matches_stored": true
+    },
+    "reload": {
+      "storage_equal": true,
+      "visible": "创建于 2026/11/17 22:28",
+      "datetime": "2026-11-17T14:28:45.011Z"
+    },
+    "complete_filter_delete": "PASS",
+    "legacy": {
+      "visible": "创建时间未知",
+      "datetime": null
+    },
+    "invalid": {
+      "visible": "创建时间无效",
+      "datetime": null,
+      "stored": "[{\"id\":\"invalid\",\"text\":\"无效时间\",\"completed\":false,\"createdAt\":\"not-a-date\"}]"
+    },
+    "external_requests": [],
+    "storage_error": {
+      "notice": "无法读取浏览器存储。仍可临时使用，刷新后本次更改将丢失。",
+      "status": "当前为临时模式，刷新后本次更改将丢失。",
+      "rows": 1
+    }
+  },
+  "screenshots": [
+    {
+      "width": 375,
+      "theme": "light",
+      "file": "todo-375-light.png",
+      "captured_at": "2026-11-17T14:28:52.642Z",
+      "sha256": "0ad6d4912cc385760df659543a70a262bac9219f058c316dfb65b0c7d504cfa7",
+      "bytes": 44245,
+      "snapshot": {
+        "scroll_width": 375,
+        "inner_width": 375,
+        "color_scheme": "light",
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:00.000Z",
+            "time_rect": {
+              "x": 65,
+              "y": 505.765625,
+              "width": 217,
+              "height": 19.1875
+            },
+            "details_width": 217,
+            "check_rect": {
+              "x": 35,
+              "y": 492.453125,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 292,
+              "y": 480.453125,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "完成一件重要的小事",
+            "time": "创建于 2026/11/17 20:05",
+            "datetime": "2026-11-17T12:05:00.000Z",
+            "time_rect": {
+              "x": 65,
+              "y": 579.75,
+              "width": 217,
+              "height": 19.1875
+            },
+            "details_width": 217,
+            "check_rect": {
+              "x": 35,
+              "y": 566.4375,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 292,
+              "y": 554.4375,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time": "创建于 2026/11/17 19:30",
+            "datetime": "2026-11-17T11:30:00.000Z",
+            "time_rect": {
+              "x": 65,
+              "y": 915.5,
+              "width": 217,
+              "height": 19.1875
+            },
+            "details_width": 217,
+            "check_rect": {
+              "x": 35,
+              "y": 771.3125,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 292,
+              "y": 759.3125,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          }
+        ],
+        "add_rect": {
+          "x": 278,
+          "y": 292.78125,
+          "width": 62,
+          "height": 48
+        },
+        "filter_rects": [
+          {
+            "text": "全部",
+            "x": 35,
+            "y": 406.96875,
+            "width": 48,
+            "height": 44,
+            "pressed": "true"
+          },
+          {
+            "text": "未完成",
+            "x": 93,
+            "y": 406.96875,
+            "width": 61,
+            "height": 44,
+            "pressed": "false"
+          },
+          {
+            "text": "已完成",
+            "x": 164,
+            "y": 406.96875,
+            "width": 61,
+            "height": 44,
+            "pressed": "false"
+          }
+        ]
+      },
+      "page_errors": []
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "file": "todo-375-dark.png",
+      "captured_at": "2026-11-17T14:28:55.399Z",
+      "sha256": "3e1f6506a3f870570fc50b9b37fcfc0cf7ae6901457efb3423b6a49726ac9403",
+      "bytes": 44326,
+      "snapshot": {
+        "scroll_width": 375,
+        "inner_width": 375,
+        "color_scheme": "dark",
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:00.000Z",
+            "time_rect": {
+              "x": 65,
+              "y": 505.765625,
+              "width": 217,
+              "height": 19.1875
+            },
+            "details_width": 217,
+            "check_rect": {
+              "x": 35,
+              "y": 492.453125,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 292,
+              "y": 480.453125,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "完成一件重要的小事",
+            "time": "创建于 2026/11/17 20:05",
+            "datetime": "2026-11-17T12:05:00.000Z",
+            "time_rect": {
+              "x": 65,
+              "y": 579.75,
+              "width": 217,
+              "height": 19.1875
+            },
+            "details_width": 217,
+            "check_rect": {
+              "x": 35,
+              "y": 566.4375,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 292,
+              "y": 554.4375,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time": "创建于 2026/11/17 19:30",
+            "datetime": "2026-11-17T11:30:00.000Z",
+            "time_rect": {
+              "x": 65,
+              "y": 915.5,
+              "width": 217,
+              "height": 19.1875
+            },
+            "details_width": 217,
+            "check_rect": {
+              "x": 35,
+              "y": 771.3125,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 292,
+              "y": 759.3125,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          }
+        ],
+        "add_rect": {
+          "x": 278,
+          "y": 292.78125,
+          "width": 62,
+          "height": 48
+        },
+        "filter_rects": [
+          {
+            "text": "全部",
+            "x": 35,
+            "y": 406.96875,
+            "width": 48,
+            "height": 44,
+            "pressed": "true"
+          },
+          {
+            "text": "未完成",
+            "x": 93,
+            "y": 406.96875,
+            "width": 61,
+            "height": 44,
+            "pressed": "false"
+          },
+          {
+            "text": "已完成",
+            "x": 164,
+            "y": 406.96875,
+            "width": 61,
+            "height": 44,
+            "pressed": "false"
+          }
+        ]
+      },
+      "page_errors": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "file": "todo-1280-light.png",
+      "captured_at": "2026-11-17T14:28:58.035Z",
+      "sha256": "92465ede56521c2e465c0c07f64f4ea10da2ed19cc882a188bb4a24aa5e22dad",
+      "bytes": 55364,
+      "snapshot": {
+        "scroll_width": 1280,
+        "inner_width": 1280,
+        "color_scheme": "light",
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:00.000Z",
+            "time_rect": {
+              "x": 361,
+              "y": 570.765625,
+              "width": 530,
+              "height": 19.1875
+            },
+            "details_width": 530,
+            "check_rect": {
+              "x": 329,
+              "y": 557.453125,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 903,
+              "y": 545.453125,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "完成一件重要的小事",
+            "time": "创建于 2026/11/17 20:05",
+            "datetime": "2026-11-17T12:05:00.000Z",
+            "time_rect": {
+              "x": 361,
+              "y": 644.75,
+              "width": 530,
+              "height": 19.1875
+            },
+            "details_width": 530,
+            "check_rect": {
+              "x": 329,
+              "y": 631.4375,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 903,
+              "y": 619.4375,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time": "创建于 2026/11/17 19:30",
+            "datetime": "2026-11-17T11:30:00.000Z",
+            "time_rect": {
+              "x": 361,
+              "y": 813.921875,
+              "width": 530,
+              "height": 19.1875
+            },
+            "details_width": 530,
+            "check_rect": {
+              "x": 329,
+              "y": 753.015625,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 903,
+              "y": 741.015625,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          }
+        ],
+        "add_rect": {
+          "x": 852,
+          "y": 353.78125,
+          "width": 99,
+          "height": 48
+        },
+        "filter_rects": [
+          {
+            "text": "全部",
+            "x": 329,
+            "y": 471.96875,
+            "width": 52,
+            "height": 40,
+            "pressed": "true"
+          },
+          {
+            "text": "未完成",
+            "x": 391,
+            "y": 471.96875,
+            "width": 65,
+            "height": 40,
+            "pressed": "false"
+          },
+          {
+            "text": "已完成",
+            "x": 466,
+            "y": 471.96875,
+            "width": 65,
+            "height": 40,
+            "pressed": "false"
+          }
+        ]
+      },
+      "page_errors": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "file": "todo-1280-dark.png",
+      "captured_at": "2026-11-17T14:29:00.184Z",
+      "sha256": "5327f518c89cffeb9e9893f193ff45d7d3c9b07bbd300d5ca8af04fc9dd2e411",
+      "bytes": 54792,
+      "snapshot": {
+        "scroll_width": 1280,
+        "inner_width": 1280,
+        "color_scheme": "dark",
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:00.000Z",
+            "time_rect": {
+              "x": 361,
+              "y": 570.765625,
+              "width": 530,
+              "height": 19.1875
+            },
+            "details_width": 530,
+            "check_rect": {
+              "x": 329,
+              "y": 557.453125,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 903,
+              "y": 545.453125,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "完成一件重要的小事",
+            "time": "创建于 2026/11/17 20:05",
+            "datetime": "2026-11-17T12:05:00.000Z",
+            "time_rect": {
+              "x": 361,
+              "y": 644.75,
+              "width": 530,
+              "height": 19.1875
+            },
+            "details_width": 530,
+            "check_rect": {
+              "x": 329,
+              "y": 631.4375,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 903,
+              "y": 619.4375,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time": "创建于 2026/11/17 19:30",
+            "datetime": "2026-11-17T11:30:00.000Z",
+            "time_rect": {
+              "x": 361,
+              "y": 813.921875,
+              "width": 530,
+              "height": 19.1875
+            },
+            "details_width": 530,
+            "check_rect": {
+              "x": 329,
+              "y": 753.015625,
+              "width": 20,
+              "height": 20
+            },
+            "remove_rect": {
+              "x": 903,
+              "y": 741.015625,
+              "width": 48,
+              "height": 44
+            },
+            "overlaps_delete": false
+          }
+        ],
+        "add_rect": {
+          "x": 852,
+          "y": 353.78125,
+          "width": 99,
+          "height": 48
+        },
+        "filter_rects": [
+          {
+            "text": "全部",
+            "x": 329,
+            "y": 471.96875,
+            "width": 52,
+            "height": 40,
+            "pressed": "true"
+          },
+          {
+            "text": "未完成",
+            "x": 391,
+            "y": 471.96875,
+            "width": 65,
+            "height": 40,
+            "pressed": "false"
+          },
+          {
+            "text": "已完成",
+            "x": 466,
+            "y": 471.96875,
+            "width": 65,
+            "height": 40,
+            "pressed": "false"
+          }
+        ]
+      },
+      "page_errors": []
+    }
+  ],
+  "browser": {
+    "engine": "Chromium",
+    "version": "156.0.8078.4",
+    "playwright": "1.65.0"
+  },
+  "cleanup": {
+    "browser_closed": true,
+    "contexts_closed": true,
+    "owned_server_started": false
+  },
+  "finished_at": "2026-11-17T14:29:00.619Z"
+}
