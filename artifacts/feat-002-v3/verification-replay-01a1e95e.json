@@ -1,0 +1,60 @@
+{
+  "schema": "feat-002.verification-replay/v1",
+  "verifier_id": "01a1e95e-2785-7ec3-b768-1978540a87b2",
+  "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "checked_at": "2026-11-17T12:02:42.248Z",
+  "environment": {
+    "platform": "win32",
+    "node": "v26.13.0",
+    "playwright": "1.65.0",
+    "executable": "Chromium 1248 packaged browser",
+    "viewport": "1280x900",
+    "locale": "zh-CN",
+    "color_scheme": "light",
+    "storage": "fresh isolated context, synthetic localStorage only"
+  },
+  "action": {
+    "entry": "http://127.0.0.1:4173/",
+    "input_selector": "#task-input",
+    "submit_selector": "button[type=\"submit\"]",
+    "synthetic_text": "v3-created-at-check",
+    "refresh_performed": true
+  },
+  "http_status": 200,
+  "after_submit": {
+    "url": "http://127.0.0.1:4173/",
+    "title": "我的待办 · Todo",
+    "storageRaw": "[{\"id\":\"3a0faa69-6592-4499-8185-51ff24705848\",\"text\":\"v3-created-at-check\",\"completed\":false}]",
+    "itemCount": 1,
+    "itemText": "v3-created-at-check删除",
+    "itemOuterHTML": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"3a0faa69-6592-4499-8185-51ff24705848\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"3a0faa69-6592-4499-8185-51ff24705848\">删除</button></li>",
+    "timeText": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "hasTime": false,
+    "hasDataCreatedAt": false,
+    "hasCreatedAtClass": false,
+    "pageErrors": [],
+    "consoleErrors": []
+  },
+  "after_reload": {
+    "url": "http://127.0.0.1:4173/",
+    "title": "我的待办 · Todo",
+    "storageRaw": "[{\"id\":\"3a0faa69-6592-4499-8185-51ff24705848\",\"text\":\"v3-created-at-check\",\"completed\":false}]",
+    "itemCount": 1,
+    "itemText": "v3-created-at-check删除",
+    "itemOuterHTML": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"3a0faa69-6592-4499-8185-51ff24705848\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"3a0faa69-6592-4499-8185-51ff24705848\">删除</button></li>",
+    "timeText": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "hasTime": false,
+    "hasDataCreatedAt": false,
+    "hasCreatedAtClass": false,
+    "pageErrors": [],
+    "consoleErrors": []
+  },
+  "page_errors": [],
+  "console_errors": [],
+  "conclusion": "GAP_CONFIRMED",
+  "screenshot": "verification-after-reload-01a1e95e.png"
+}
