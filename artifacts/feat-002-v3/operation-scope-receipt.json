@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-11-17T12:10:29Z",
+  "session_id": "01a1e8ef-c296-7890-8bf9-59c95d55fbfc",
+  "app_data_sources": [
+    "localStorage"
+  ],
+  "network_calls": [],
+  "backend": null,
+  "auth": null,
+  "replay_context": "isolated Chromium context",
+  "synthetic_text": "v3-created-at-check",
+  "port_4173_listening": false,
+  "product_changed": false,
+  "changed_paths": [
+    "artifacts/feat-002-v3/feedback-response.json",
+    "artifacts/feat-002-v3/layout-1280-dark.png",
+    "artifacts/feat-002-v3/layout-1280-light.png",
+    "artifacts/feat-002-v3/layout-375-dark.png",
+    "artifacts/feat-002-v3/layout-375-light.png",
+    "artifacts/feat-002-v3/layout-replay.cjs",
+    "artifacts/feat-002-v3/layout-result.json",
+    "artifacts/feat-002-v3/playwright.existing.config.cjs",
+    "artifacts/feat-002-v3/replay-after-reload.png",
+    "artifacts/feat-002-v3/replay-after-submit.png",
+    "artifacts/feat-002-v3/replay-result.json",
+    "artifacts/feat-002-v3/replay.cjs",
+    "artifacts/feat-002-v3/report.md"
+  ],
+  "historical_real_user_storage_proof": "NOT_AVAILABLE",
+  "limitation": "Static code and the current isolated replay prove local-only storage and synthetic current-round data, but do not prove a negative for all historical actions in this session."
+}
