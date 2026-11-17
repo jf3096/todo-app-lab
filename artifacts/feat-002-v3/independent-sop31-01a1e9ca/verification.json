@@ -11,7 +11,7 @@
   "reviewer_id": "01a1e9ca-ab55-7021-816b-30b0f16680d3",
   "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
   "conclusion": "PASS",
-  "evidence_commit": "f08ec841ecf4e8153f3b0c923fe3a8c80c5f2689",
+  "evidence_commit": "f8c66f6d7c4ed5c312227bd674d6141a4eaf4826",
   "checks": [
     {
       "ac_id": "AC-01",
@@ -20,7 +20,7 @@
       "observed": "The public candidate is reachable and operable, all resources match the frozen source hashes, and the current submission adds design/evidence only without republishing or overwriting an existing preview.",
       "evidence": [
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/f08ec841ecf4e8153f3b0c923fe3a8c80c5f2689/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/f8c66f6d7c4ed5c312227bd674d6141a4eaf4826/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
           "sha256": "b8c70b1a04302a0b78404149a4408f25162561b1d6e78db068a7749ef906518a",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
@@ -39,7 +39,7 @@
       "observed": "Titles and timestamps are readable, controls are distinct and operable, long text stays inside the layout, and document scrollWidth equals viewport width in all four states; no demo tooling is present.",
       "evidence": [
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/f08ec841ecf4e8153f3b0c923fe3a8c80c5f2689/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/f8c66f6d7c4ed5c312227bd674d6141a4eaf4826/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
           "sha256": "b8c70b1a04302a0b78404149a4408f25162561b1d6e78db068a7749ef906518a",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
@@ -80,7 +80,7 @@
           "kind": "report"
         },
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/f08ec841ecf4e8153f3b0c923fe3a8c80c5f2689/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/f8c66f6d7c4ed5c312227bd674d6141a4eaf4826/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
           "sha256": "b8c70b1a04302a0b78404149a4408f25162561b1d6e78db068a7749ef906518a",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
@@ -99,13 +99,13 @@
       "observed": "Evidence is reachable from a new session, bound to the exact commit and actual timestamps/hashes, only prototype design/evidence changed, temporary resources are clean, and the next stage can cold-start without inheriting an approval.",
       "evidence": [
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/f08ec841ecf4e8153f3b0c923fe3a8c80c5f2689/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/f8c66f6d7c4ed5c312227bd674d6141a4eaf4826/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
           "sha256": "b8c70b1a04302a0b78404149a4408f25162561b1d6e78db068a7749ef906518a",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
           "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; detached evidence commit 25b2fef0b999c2294f6a926a87cd1e0bd93e5d75; own local server port 9816.",
           "action": "Read the current submission diff and structured report, used a new browser context with synthetic storage, stopped its owned server, and fetched the committed report raw bytes from GitHub.",
-          "observed": "The submission changes only artifacts/feat-002-v3/prototype/** from frozen parent 6b2d3cc. Browser started empty, used only synthetic localStorage and made no external requests. Server port 9816 closed. Raw report is HTTP 200 and 5053 bytes with SHA-256 b8c70b1a04302a0b78404149a4408f25162561b1d6e78db068a7749ef906518a. Report and design remain explicitly pending SOP-3.2 human discussion; no completion, implementation, merge or deployment is claimed.",
+          "observed": "The submission changes only artifacts/feat-002-v3/prototype/** from frozen parent 6b2d3cc. Browser started empty, used only synthetic localStorage and made no external requests. Server port 9816 closed. Raw report is HTTP 200 and 9777 bytes with SHA-256 9a988283919317d06572969d664d4f50dfa47c0c8f8d1784b5f5904d0916987b. Report and design remain explicitly pending SOP-3.2 human discussion; no completion, implementation, merge or deployment is claimed.",
           "accessible": true,
           "kind": "report"
         }
