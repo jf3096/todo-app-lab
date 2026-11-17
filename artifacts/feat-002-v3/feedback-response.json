@@ -1,0 +1,50 @@
+{
+  "schema": "feat-002.feedback-response/v1",
+  "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "feedback_id": "feat-002-sop1-fb-report-hash",
+  "feedback_source": "https://github.com/jf3096/todo-app-lab/issues/12#issuecomment-6947035627",
+  "response": {
+    "action": "corrected evidence hash mapping and added an independently readable cleanup receipt",
+    "reason": "The prior submission attached the replay-result.json SHA-256 to report.md for AC-01 and AC-04.",
+    "result": "report.md now has a receipt with its actual SHA-256; each evidence record can be mapped to the correct file."
+  },
+  "evidence": [
+    {
+      "path": "artifacts/feat-002-v3/report.md",
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/aa6de69b98628e63372cb0e0123efdb4c8b84f19/artifacts/feat-002-v3/report.md",
+      "sha256": "254d4f0bc7a13c13a7e38041d0a219afc9fce55561f8541cb479f470d2e4efd2"
+    },
+    {
+      "path": "artifacts/feat-002-v3/replay-result.json",
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/aa6de69b98628e63372cb0e0123efdb4c8b84f19/artifacts/feat-002-v3/replay-result.json",
+      "sha256": "8ce0afe59dc1e4f6e1adf05ee66d101612223903dded1528a7e17f71d2614053"
+    },
+    {
+      "path": "artifacts/feat-002-v3/layout-result.json",
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/aa6de69b98628e63372cb0e0123efdb4c8b84f19/artifacts/feat-002-v3/layout-result.json",
+      "sha256": "025f383936afc27d25c8d0564dee99ea735e79ed7d9675113e57637ebde50bef"
+    }
+  ],
+  "observed_at": "2026-11-17T11:48:32Z",
+  "environment": {
+    "branch": "codex/feat-002-sop1",
+    "head_before_response_commit": "aa6de69b98628e63372cb0e0123efdb4c8b84f19",
+    "port_4173_listening": false,
+    "worktree_clean_before_response": true,
+    "product_changed_from_candidate": false,
+    "changed_paths_from_candidate": [
+      "artifacts/feat-002-v3/layout-1280-dark.png",
+      "artifacts/feat-002-v3/layout-1280-light.png",
+      "artifacts/feat-002-v3/layout-375-dark.png",
+      "artifacts/feat-002-v3/layout-375-light.png",
+      "artifacts/feat-002-v3/layout-replay.cjs",
+      "artifacts/feat-002-v3/layout-result.json",
+      "artifacts/feat-002-v3/playwright.existing.config.cjs",
+      "artifacts/feat-002-v3/replay-after-reload.png",
+      "artifacts/feat-002-v3/replay-after-submit.png",
+      "artifacts/feat-002-v3/replay-result.json",
+      "artifacts/feat-002-v3/replay.cjs",
+      "artifacts/feat-002-v3/report.md"
+    ]
+  }
+}
