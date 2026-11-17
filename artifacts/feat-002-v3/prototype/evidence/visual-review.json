@@ -1,0 +1,51 @@
+{
+  "reviewed_at": "2026-11-17T13:48:20.000Z",
+  "reviewer": "executor",
+  "artifact_version": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "visual": [
+    {
+      "width": 375,
+      "theme": "light",
+      "file": "todo-375-light.png",
+      "observations": [
+        "The two synthetic rows show each task title above a readable local creation timestamp; the hierarchy remains clear at 375px.",
+        "The long title wraps inside the task details column instead of widening the document; scrollWidth equals innerWidth.",
+        "The checkbox is separated from the title block, and the 48 by 44 pixel bordered delete control remains discoverable without overlap."
+      ],
+      "issues": []
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "file": "todo-375-dark.png",
+      "observations": [
+        "Dark background and light text preserve readable title and timestamp contrast at 375px.",
+        "The bordered delete control and filter controls remain visually distinct from the surface and do not overlap the task details.",
+        "Long title wrapping stays inside the workspace with no horizontal overflow."
+      ],
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "file": "todo-1280-light.png",
+      "observations": [
+        "At 1280px the page keeps a centered reading column and the task title takes the main flexible space above its timestamp.",
+        "The checkbox, task details, and separate bordered delete button align on the row without crowding.",
+        "The long task wraps within its column and the document has no horizontal overflow."
+      ],
+      "issues": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "file": "todo-1280-dark.png",
+      "observations": [
+        "Dark theme keeps the title, timestamp, filters, input, and delete control readable at 1280px.",
+        "Spacing between the title block and delete control remains stable with long synthetic text.",
+        "No horizontal clipping or control overlap is visible."
+      ],
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schema": "feat-002.sop3.1-prototype/v1",
+  "started_at": "2026-11-17T13:46:56.646Z",
+  "executor_id": "01a1e9bd-5e61-7721-ab12-caf7dc594d34",
+  "host_session_id": "01a1e24d-8b18-7440-9947-49552d981156",
+  "candidate": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "public_url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/",
+  "source_hashes": [
+    {
+      "file": "index.html",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/index.html",
+      "status": 200,
+      "public_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "frozen_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "matches": true,
+      "bytes": 3224
+    },
+    {
+      "file": "app.js",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/app.js",
+      "status": 200,
+      "public_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "frozen_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "matches": true,
+      "bytes": 6929
+    },
+    {
+      "file": "styles.css",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/styles.css",
+      "status": 200,
+      "public_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "frozen_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "matches": true,
+      "bytes": 6806
+    }
+  ],
+  "interactions": {
+    "empty_state": "✓\n从一件小事开始\n\n在上方写下你的第一条待办。",
+    "whitespace_error": "请输入 1 到 200 个字符的待办事项。",
+    "whitespace_kept_empty": true,
+    "created_text": "创建于 2026/11/17 21:46",
+    "complete_filter_delete": true,
+    "legacy_time": "创建时间未知",
+    "invalid_time": "创建时间无效",
+    "external_requests": [],
+    "storage_error": "无法读取浏览器存储。仍可临时使用，刷新后本次更改将丢失。",
+    "temporary_item_visible": true
+  },
+  "screenshots": [
+    {
+      "width": 375,
+      "theme": "light",
+      "file": "todo-375-light.png",
+      "captured_at": "2026-11-17T13:47:00.810Z",
+      "sha256": "e9f9b7f986d4a7fd3e2c610bcbac6c1be6d6f76ea5d7d6a5471d070f3f199643",
+      "bytes": 41133,
+      "snapshot": {
+        "scroll_width": 375,
+        "inner_width": 375,
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:00.670Z",
+            "details_width": 217,
+            "remove_rect": {
+              "x": 292,
+              "width": 48,
+              "height": 44
+            }
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:00.730Z",
+            "details_width": 217,
+            "remove_rect": {
+              "x": 292,
+              "width": 48,
+              "height": 44
+            }
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "file": "todo-375-dark.png",
+      "captured_at": "2026-11-17T13:47:01.324Z",
+      "sha256": "118bace50fbd87e0216e031646fc354dcf8b32c1e409b150ec04fdf55d601f4c",
+      "bytes": 42107,
+      "snapshot": {
+        "scroll_width": 375,
+        "inner_width": 375,
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:01.211Z",
+            "details_width": 217,
+            "remove_rect": {
+              "x": 292,
+              "width": 48,
+              "height": 44
+            }
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:01.262Z",
+            "details_width": 217,
+            "remove_rect": {
+              "x": 292,
+              "width": 48,
+              "height": 44
+            }
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "file": "todo-1280-light.png",
+      "captured_at": "2026-11-17T13:47:01.901Z",
+      "sha256": "f79fd9a11b51ad341d6c979bb6f27e72253f717bb5e75bd6f7153a8fc822728e",
+      "bytes": 53391,
+      "snapshot": {
+        "scroll_width": 1280,
+        "inner_width": 1280,
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:01.755Z",
+            "details_width": 530,
+            "remove_rect": {
+              "x": 903,
+              "width": 48,
+              "height": 44
+            }
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:01.817Z",
+            "details_width": 530,
+            "remove_rect": {
+              "x": 903,
+              "width": 48,
+              "height": 44
+            }
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "file": "todo-1280-dark.png",
+      "captured_at": "2026-11-17T13:47:02.455Z",
+      "sha256": "0c18eab36ca9fd5131b715959125949c7c9abf6492085a55cb7a498add924a87",
+      "bytes": 52813,
+      "snapshot": {
+        "scroll_width": 1280,
+        "inner_width": 1280,
+        "rows": [
+          {
+            "title": "整理今天的计划",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:02.313Z",
+            "details_width": 530,
+            "remove_rect": {
+              "x": 903,
+              "width": 48,
+              "height": 44
+            }
+          },
+          {
+            "title": "很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容很长的待办内容",
+            "time_text": "创建于 2026/11/17 21:47",
+            "datetime": "2026-11-17T13:47:02.364Z",
+            "details_width": 530,
+            "remove_rect": {
+              "x": 903,
+              "width": 48,
+              "height": 44
+            }
+          }
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "observations": {
+    "format": "UTC ISO stored; zh-CN local timezone displayed to minute",
+    "four_states": "Captions are below titles, controls remain separate, and scrollWidth equals innerWidth."
+  },
+  "cleanup": {
+    "self_started": true,
+    "port": 3108,
+    "closed_at": "2026-11-17T13:47:02.909Z"
+  },
+  "entry": "http://127.0.0.1:3108/",
+  "environment": {
+    "os": "win32",
+    "node": "v26.13.0",
+    "browser": "156.0.8078.4"
+  },
+  "finished_at": "2026-11-17T13:47:02.909Z"
+}
