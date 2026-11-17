@@ -1,0 +1,85 @@
+{
+  "schema": "feat-002.sop3.2-independent-review/v1",
+  "started_at": "2026-11-17T16:02:00.238Z",
+  "verifier_id": "01a1e9fa-81d5-74d2-aed6-f6bc88ca7d70",
+  "host_session_id": "01a1e24d-8b18-7440-9947-49552d981156",
+  "card_url": "https://github.com/jf3096/todo-app-lab/issues/14",
+  "submission_url": "https://github.com/jf3096/todo-app-lab/issues/14#issuecomment-6953250176",
+  "dependency_url": "https://github.com/jf3096/todo-app-lab/issues/13#issuecomment-6950520107",
+  "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
+  "public_url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/",
+  "source_hashes": [
+    {
+      "file": "index.html",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/index.html",
+      "status": 200,
+      "bytes": 3224,
+      "public_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "frozen_preview_sha256": "a7fd5a11a374966ec11aed6511c626392be145cbb0c6369a19ae039af197d697",
+      "public_matches_preview": true
+    },
+    {
+      "file": "app.js",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/app.js",
+      "status": 200,
+      "bytes": 6929,
+      "public_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "frozen_preview_sha256": "2d6e2f69ed85b5aac9360a7db708e3dd0c32f1304d38c5f3c226b47ea03c316e",
+      "public_matches_preview": true
+    },
+    {
+      "file": "styles.css",
+      "url": "https://jf3096.github.io/todo-app-lab/previews/pr-10/2e88373/styles.css",
+      "status": 200,
+      "bytes": 6806,
+      "public_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "frozen_preview_sha256": "69dafb8b7cc4abee288aed3ae4bcd5fb28798f11266fccb5f6f3dc3f006a0db1",
+      "public_matches_preview": true
+    }
+  ],
+  "interactions": {
+    "initial_storage": null,
+    "whitespace_error": "请输入 1 到 200 个字符的待办事项。",
+    "whitespace_rows": 0,
+    "created": {
+      "visible": "创建于 2026/11/18 00:02",
+      "datetime": "2026-11-17T16:02:05.902Z",
+      "stored_created_at": "2026-11-17T16:02:05.902Z",
+      "visible_matches_stored": true
+    },
+    "reload": {
+      "storage_equal": true,
+      "visible": "创建于 2026/11/18 00:02",
+      "datetime": "2026-11-17T16:02:05.902Z"
+    },
+    "complete_filter_delete": "PASS",
+    "legacy": {
+      "visible": "创建时间未知",
+      "datetime": null
+    },
+    "invalid": {
+      "visible": "创建时间无效",
+      "datetime": null,
+      "stored": "[{\"id\":\"invalid\",\"text\":\"无效时间\",\"completed\":false,\"createdAt\":\"not-a-date\"}]"
+    },
+    "external_requests": [],
+    "storage_error": {
+      "notice": "无法读取浏览器存储。仍可临时使用，刷新后本次更改将丢失。",
+      "status": "当前为临时模式，刷新后本次更改将丢失。",
+      "rows": 1
+    }
+  },
+  "screenshots": [],
+  "browser": {
+    "engine": "Chromium",
+    "version": "156.0.8078.4",
+    "playwright": "1.65.0"
+  },
+  "cleanup": {
+    "browser_closed": true,
+    "contexts_closed": true,
+    "owned_server_started": false
+  },
+  "visual_scope": "No new visual judgment; this run checks current functional paths only. Original visual provenance is checked separately.",
+  "finished_at": "2026-11-17T16:02:10.719Z"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "feat-002-sop32-budget-begin-01a1e9fa",
+  "type": "begin_verification",
+  "actor": {
+    "role": "verifier",
+    "id": "01a1e9fa-81d5-74d2-aed6-f6bc88ca7d70"
+  },
+  "round_id": "feat-002-sop32-budget-review-01a1e9fa",
+  "submission_id": "feat-002-sop32-budget-halt-43bfba8"
+}
