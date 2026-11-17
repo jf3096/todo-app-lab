@@ -11,7 +11,7 @@
   "reviewer_id": "01a1e9ca-ab55-7021-816b-30b0f16680d3",
   "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
   "conclusion": "PASS",
-  "evidence_commit": "d03be02c04245316ff24c557f064508aa0846056",
+  "evidence_commit": "1f45db1f092ee743e9aff25d92be7bb546d4356d",
   "checks": [
     {
       "ac_id": "AC-01",
@@ -20,9 +20,9 @@
       "observed": "The public candidate is reachable and operable, all resources match the frozen source hashes, and the current submission adds design/evidence only without republishing or overwriting an existing preview.",
       "evidence": [
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/d03be02c04245316ff24c557f064508aa0846056/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/1f45db1f092ee743e9aff25d92be7bb546d4356d/artifacts/feat-002-v3/independent-sop31-01a1e9ca/evidence/result.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
-          "sha256": "9e3a57227f7feb3d514c56a15a1912133b88d6006c4021336d70f7317e32e5a1",
+          "sha256": "1472bfb50f18fcf03ba3af3abba1f5e3df85ebe1e1fc02d20ea6afaeb2061a69",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
           "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; detached immutable commit worktree; fresh non-persistent zh-CN contexts.",
           "action": "Opened the current child card, root workflow, dependency report and exact submission; fetched the public entry and compared resource bytes with frozen Git blobs.",
@@ -39,9 +39,9 @@
       "observed": "Titles and timestamps are readable, controls are distinct and operable, long text stays inside the layout, and document scrollWidth equals viewport width in all four states; no demo tooling is present.",
       "evidence": [
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/d03be02c04245316ff24c557f064508aa0846056/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/1f45db1f092ee743e9aff25d92be7bb546d4356d/artifacts/feat-002-v3/independent-sop31-01a1e9ca/evidence/todo-375-light.png",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
-          "sha256": "9e3a57227f7feb3d514c56a15a1912133b88d6006c4021336d70f7317e32e5a1",
+          "sha256": "05c4fee0841d39b34447e53d47197394a14b65776f76570a44a479794fb5ac09",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
           "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; local owned server; fresh non-persistent contexts.",
           "action": "Captured and opened current 375px light, 375px dark, 1280px light and 1280px dark screenshots; inspected hierarchy, spacing, controls, overflow and runtime dimensions.",
@@ -71,7 +71,7 @@
         {
           "uri": "https://github.com/jf3096/todo-app-lab/blob/5ba90f604f52c215c227c294ad44667a50342893/artifacts/feat-002-v3/prototype/design.md",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
-          "sha256": "b8c70b1a04302a0b78404149a4408f25162561b1d6e78db068a7749ef906518a",
+          "sha256": "3508e888f2f681a8f410d1a9db3ee8271936e5fc33e4c364d148c57d3ab4f6e7",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
           "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; synthetic localStorage only.",
           "action": "Read design.md and exercised new, reload, legacy missing time, invalid time, storage failure, empty and whitespace inputs, long text and existing task operations.",
@@ -80,9 +80,9 @@
           "kind": "report"
         },
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/d03be02c04245316ff24c557f064508aa0846056/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/1f45db1f092ee743e9aff25d92be7bb546d4356d/artifacts/feat-002-v3/independent-sop31-01a1e9ca/evidence/result.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
-          "sha256": "9e3a57227f7feb3d514c56a15a1912133b88d6006c4021336d70f7317e32e5a1",
+          "sha256": "1472bfb50f18fcf03ba3af3abba1f5e3df85ebe1e1fc02d20ea6afaeb2061a69",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
           "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; synthetic localStorage only.",
           "action": "Compared the design topics with independently observed browser behavior and the current design and test plan.",
@@ -99,13 +99,13 @@
       "observed": "Evidence is reachable from a new session, bound to the exact commit and actual timestamps/hashes, only prototype design/evidence changed, temporary resources are clean, and the next stage can cold-start without inheriting an approval.",
       "evidence": [
         {
-          "uri": "https://github.com/jf3096/todo-app-lab/blob/d03be02c04245316ff24c557f064508aa0846056/artifacts/feat-002-v3/independent-sop31-01a1e9ca/verification.json",
+          "uri": "https://github.com/jf3096/todo-app-lab/blob/1f45db1f092ee743e9aff25d92be7bb546d4356d/artifacts/feat-002-v3/independent-sop31-01a1e9ca/evidence/result.json",
           "artifact_version": "5ba90f604f52c215c227c294ad44667a50342893",
-          "sha256": "9e3a57227f7feb3d514c56a15a1912133b88d6006c4021336d70f7317e32e5a1",
+          "sha256": "1472bfb50f18fcf03ba3af3abba1f5e3df85ebe1e1fc02d20ea6afaeb2061a69",
           "captured_at": "2026-11-17T14:07:10.5143587Z",
-          "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; detached evidence commit d03be02c04245316ff24c557f064508aa0846056; own local server port 9816.",
+          "environment": "Windows; Node v26.13.0; Playwright 1.65.0; Chromium 156.0.8078.4; detached evidence commit 1f45db1f092ee743e9aff25d92be7bb546d4356d; own local server port 9816.",
           "action": "Read the current submission diff and structured report, used a new browser context with synthetic storage, stopped its owned server, and fetched the committed report raw bytes from GitHub.",
-          "observed": "The submission changes only artifacts/feat-002-v3/prototype/** from frozen parent 6b2d3cc. Browser started empty, used only synthetic localStorage and made no external requests. Server port 9816 closed. Raw report is HTTP 200 and 9747 bytes with SHA-256 9e3a57227f7feb3d514c56a15a1912133b88d6006c4021336d70f7317e32e5a1. Report and design remain explicitly pending SOP-3.2 human discussion; no completion, implementation, merge or deployment is claimed.",
+          "observed": "The submission changes only artifacts/feat-002-v3/prototype/** from frozen parent 6b2d3cc. Browser started empty, used only synthetic localStorage and made no external requests. Server port 9816 closed. Raw evidence is reachable from report commit 1f45db1f092ee743e9aff25d92be7bb546d4356d. Report and design remain explicitly pending SOP-3.2 human discussion; no completion, implementation, merge or deployment is claimed.",
           "accessible": true,
           "kind": "report"
         }
