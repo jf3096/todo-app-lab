@@ -49,3 +49,18 @@ v3 CLI 的 sop exec / begin_verification 已 apply，并由 service 于 2026-11-
 GitHub compare：31df→e137只新增允许的prototype-review证据；e137→43bf只修改其final-report.md。无产品、公开预览、main、托管修改。
 
 本轮独立功能结果见同目录 evidence/result.json。执行开始16:02:00.238Z、结束16:02:10.719Z，HTTP三资源200且逐字节等于5ba90f树内previews/pr-10/2e88373资源。新隔离Chromium上下文只用合成localStorage：空白校验、新增UTC与本地显示、刷新持久化、完成/筛选/删除、旧数据无时间、无效时间保留、存储异常均实际通过；无外部请求，浏览器和上下文已关闭。未重新生成截图，未将DOM或功能结果当视觉通过。
+
+## 原图与真实审阅来源的补充复核
+
+2026-11-17T16:06:29.099Z 完成只读核对：CLI 会话的用户可见消息中四个 input_image 块均为 image/png，接收时间15:21:24.293Z；其原始数据的 SHA-256 与当前卡 e13702e 原图逐一一致。未输出base64，未读取私有推理，未声称本主会话原生看过图。
+
+| 原图 | 原始 captured_at（UTC） | SHA-256 |
+| --- | --- | --- |
+| todo-375-light.png | 2026-11-17T14:28:52.642Z | 0ad6d4912cc385760df659543a70a262bac9219f058c316dfb65b0c7d504cfa7 |
+| todo-375-dark.png | 2026-11-17T14:28:55.399Z | 3e1f6506a3f870570fc50b9b37fcfc0cf7ae6901457efb3423b6a49726ac9403 |
+| todo-1280-light.png | 2026-11-17T14:28:58.035Z | 92465ede56521c2e465c0c07f64f4ea10da2ed19cc882a188bb4a24aa5e22dad |
+| todo-1280-dark.png | 2026-11-17T14:29:00.184Z | 5327f518c89cffeb9e9893f193ff45d7d3c9b07bbd300d5ca8af04fc9dd2e411 |
+
+可执行的纯记录方案：每个原始PNG单独作为kind=visual的证据，保留上表真实capture，以已输出全部观察的host时间2026-11-17T15:21:42.367Z作为visual.reviewed_at，并引用真实会话与静态观察；机器/交接/视觉文字报告分别作为report，按其真实生成、归档或读取语义说明时间。task_complete=15:21:47.071Z只标回合完成，不混成视觉观察时间。此方案四条记录在内存调用原版checkEvidence（requireVisual=true、after=原型changed_at）均ok=true；仅证明该输入方案不被静态契约拒绝，不是已接受的新提交或AC/真人PASS。
+
+不要求为记录补正重拍未变原图、修产品或重复跑同版本全套功能。原P3观察延期保留，不改成“已修复关闭”。旧字段、评论、报告和事件保留，以后续追加记录更正。
