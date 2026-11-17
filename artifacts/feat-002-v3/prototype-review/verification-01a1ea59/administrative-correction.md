@@ -10,9 +10,9 @@
 
 - 视觉 CLI 输出完成：`2026-11-17T16:37:19.710Z`。来源：本验证会话的 `exec` 工具调用 `exec-612db31d-7516-4565-863a-57015b653857`（进程 `80282`，退出码 `0`），其宿主记录位于 `C:\Users\KSG\.codex\sessions\2026\11\18\rollout-2026-11-18T00-31-49-01a1ea59-b3b0-7492-a64f-b8869059d372.jsonl` 第 390 行 `item_completed`。该记录包含四个 `-i` 原始 PNG 路径、CLI 会话 ID 和完整标准输出。
 - 正式 verification 评论发布：GitHub 评论 `6954401667` 的 `created_at=2026-11-17T16:38:57Z`。
-- 本次正式验证回合完成：`2026-11-17T16:39:36.055Z`。来源：同一宿主会话第 477 行 `task_complete`，`turn_id=01a1ea59-b65d-7993-8b75-cd02e8e38713`，`started_at=1794933110`，`completed_at=1794933576`，`duration_ms=465673`。
+- 整个正式验证回合结束：`2026-11-17T16:39:36.055Z`。来源：同一宿主会话第 477 行 `task_complete`，`turn_id=01a1ea59-b65d-7993-8b75-cd02e8e38713`，`started_at=1794933110`，`completed_at=1794933576`，`duration_ms=465673`。该事件包含报告发布和回读，晚于报告发布，只能证明整个回合结束。
 
-结论：原报告 `checked_at` 应理解为错误填写的未来时间；可精确核对的最新检查完成时间是 `2026-11-17T16:39:36.055Z`。视觉完成时间单独是 `2026-11-17T16:37:19.710Z`，两者不能混写。
+结论：原报告 `checked_at=2026-11-17T16:40:00.000Z` 晚于评论发布时间 `2026-11-17T16:38:57Z`，原值无效。可证的回合结束时间是 `2026-11-17T16:39:36.055Z`；发布前检查没有独立完成时间字段，不能从 `task_complete` 补写 `checked_at`。视觉 CLI 工具返回完成时间 `2026-11-17T16:37:19.710Z` 仅作为该工具事件的时间，不代表业务检查完成，也不代表回合结束。
 
 ## 2. AC-02 四图证据与可访问观察
 
@@ -29,7 +29,7 @@
 
 可跨会话访问的原始观察文件：
 
-- https://github.com/jf3096/todo-app-lab/blob/6df7863d070986e798ba397288ead6557d9ba8f6/artifacts/feat-002-v3/prototype-review/verification-01a1ea59/visual-observation.json
+- https://github.com/jf3096/todo-app-lab/blob/52421021f2f7c437c8a332394244defe063accdf/artifacts/feat-002-v3/prototype-review/verification-01a1ea59/visual-observation.json
 - 该文件 SHA-256：`53d0b2977610732478c0bb719d1e3c8bf1f0d8fd33dee0eaef6d769e61fc907a`
 - 内容包含 4 个 `images` 条目、P0/P1/P2 均为空、P3 一项；它记录的是本次视觉会话的原始返回，不是新的产品验收。
 
