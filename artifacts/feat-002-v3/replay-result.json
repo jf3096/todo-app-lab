@@ -1,0 +1,125 @@
+{
+  "schema": "feat-002.replay/v1",
+  "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "entry_url": "http://127.0.0.1:4173/",
+  "browser": {
+    "name": "chromium",
+    "executable": "C:\\Users\\KSG\\AppData\\Local\\ms-playwright\\chromium-1248\\chrome-win64\\chrome.exe",
+    "headless": true,
+    "version": "156.0.8078.4"
+  },
+  "environment": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "locale": "zh-CN",
+    "viewport": "1280x900",
+    "color_scheme": "light",
+    "storage": "isolated browser context; synthetic only"
+  },
+  "action": {
+    "selector": "#task-input",
+    "inputValueBeforeSubmit": "v3-created-at-check",
+    "submit_selector": "button[type=\"submit\"]",
+    "reload": true
+  },
+  "http_status": 200,
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4173/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/app.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/styles.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/app.js",
+      "status": 200
+    }
+  ],
+  "initial": {
+    "documentTitle": "我的待办 · Todo",
+    "itemFound": false,
+    "itemOuterHTML": null,
+    "itemText": null,
+    "timeText": null,
+    "timeDateTime": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "hasTime": false,
+    "hasDataCreatedAt": false,
+    "hasCreatedAtClass": false,
+    "savedTask": null,
+    "itemDisplay": null,
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "colorScheme": "light"
+  },
+  "after_submit": {
+    "documentTitle": "我的待办 · Todo",
+    "itemFound": true,
+    "itemOuterHTML": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"5cae160b-a0d7-4b78-9657-10714e78c2b1\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"5cae160b-a0d7-4b78-9657-10714e78c2b1\">删除</button></li>",
+    "itemText": "v3-created-at-check删除",
+    "timeText": null,
+    "timeDateTime": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "hasTime": false,
+    "hasDataCreatedAt": false,
+    "hasCreatedAtClass": false,
+    "savedTask": {
+      "id": "5cae160b-a0d7-4b78-9657-10714e78c2b1",
+      "text": "v3-created-at-check",
+      "completed": false
+    },
+    "itemDisplay": "flex",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "colorScheme": "light"
+  },
+  "storage_after_submit": "[{\"id\":\"5cae160b-a0d7-4b78-9657-10714e78c2b1\",\"text\":\"v3-created-at-check\",\"completed\":false}]",
+  "after_reload": {
+    "documentTitle": "我的待办 · Todo",
+    "itemFound": true,
+    "itemOuterHTML": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"5cae160b-a0d7-4b78-9657-10714e78c2b1\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"5cae160b-a0d7-4b78-9657-10714e78c2b1\">删除</button></li>",
+    "itemText": "v3-created-at-check删除",
+    "timeText": null,
+    "timeDateTime": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "hasTime": false,
+    "hasDataCreatedAt": false,
+    "hasCreatedAtClass": false,
+    "savedTask": {
+      "id": "5cae160b-a0d7-4b78-9657-10714e78c2b1",
+      "text": "v3-created-at-check",
+      "completed": false
+    },
+    "itemDisplay": "flex",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "colorScheme": "light"
+  },
+  "storage_after_reload": "[{\"id\":\"5cae160b-a0d7-4b78-9657-10714e78c2b1\",\"text\":\"v3-created-at-check\",\"completed\":false}]",
+  "console_messages": [],
+  "page_errors": [],
+  "conclusion": "GAP_CONFIRMED"
+}
