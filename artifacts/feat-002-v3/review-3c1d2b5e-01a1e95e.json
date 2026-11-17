@@ -1,0 +1,90 @@
+{
+  "schema": "feat-002.independent-review/v1",
+  "submission_id": "feat-002-sop1-submission-3c1d2b5ee7f8",
+  "round_id": "feat-002-sop1-review-3c1d2b5e-01a1e95e",
+  "reviewer_id": "01a1e95e-2785-7ec3-b768-1978540a87b2",
+  "candidate_sha": "6b2d3cc987b09a05d85276d2f36b02be85a67040",
+  "checked_at": "2026-11-17T12:18:48.263Z",
+  "environment": {
+    "platform": "win32",
+    "node": "v26.13.0",
+    "playwright": "1.65.0",
+    "browser": "Chromium 1248",
+    "viewport": "1280x900",
+    "locale": "zh-CN",
+    "theme": "light",
+    "entry": "http://127.0.0.1:4173/"
+  },
+  "input": "v3-created-at-check",
+  "http_status": 200,
+  "after_submit": {
+    "itemCount": 1,
+    "itemText": "v3-created-at-check删除",
+    "itemOuterHTML": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"88f7efc3-56e4-400f-9a4f-f1be612b3e0a\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"88f7efc3-56e4-400f-9a4f-f1be612b3e0a\">删除</button></li>",
+    "timeText": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "storageRaw": "[{\"id\":\"88f7efc3-56e4-400f-9a4f-f1be612b3e0a\",\"text\":\"v3-created-at-check\",\"completed\":false}]",
+    "cookie": "",
+    "sessionStorageLength": 0
+  },
+  "after_reload": {
+    "itemCount": 1,
+    "itemText": "v3-created-at-check删除",
+    "itemOuterHTML": "<li class=\"task-item\"><label class=\"task-label\"><input type=\"checkbox\" class=\"task-check\" data-id=\"88f7efc3-56e4-400f-9a4f-f1be612b3e0a\"><span class=\"task-text\">v3-created-at-check</span></label><button type=\"button\" class=\"delete-button\" aria-label=\"删除：v3-created-at-check\" data-id=\"88f7efc3-56e4-400f-9a4f-f1be612b3e0a\">删除</button></li>",
+    "timeText": null,
+    "dataCreatedAt": null,
+    "createdAtClassText": null,
+    "storageRaw": "[{\"id\":\"88f7efc3-56e4-400f-9a4f-f1be612b3e0a\",\"text\":\"v3-created-at-check\",\"completed\":false}]",
+    "cookie": "",
+    "sessionStorageLength": 0
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/",
+      "resourceType": "document"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/styles.css",
+      "resourceType": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/app.js",
+      "resourceType": "script"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/",
+      "resourceType": "document"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/styles.css",
+      "resourceType": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:4173/app.js",
+      "resourceType": "script"
+    }
+  ],
+  "request_count_before_reload": 3,
+  "external_network_requests": [],
+  "page_errors": [],
+  "console_errors": [],
+  "observations": {
+    "task_persisted": true,
+    "created_at_absent": true,
+    "storage_fields": [
+      "completed",
+      "id",
+      "text"
+    ],
+    "cookie_empty": true,
+    "session_storage_empty": true
+  },
+  "screenshot": "review-after-reload-3c1d2b5e-01a1e95e.png"
+}
