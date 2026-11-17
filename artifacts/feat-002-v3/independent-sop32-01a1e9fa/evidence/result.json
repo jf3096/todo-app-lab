@@ -71,8 +71,33 @@
     }
   },
   "visual_review": {
-    "status": "CANNOT_VERIFY",
-    "reason": "The four current PNG files were valid and hash-matched, but no image block became visible through the local_image or explicit image/png data URL paths.",
+    "status": "PASS_WITH_DEFERRED_P3",
+    "method": "A separate read-only codex exec session received only the card URL, exact submission URL and four original PNG attachments. The main verifier then compared the raw observations with current AC-02.",
+    "reviewer_session_id": "01a1ea0a-0856-7633-90f8-9ef880082517",
+    "reviewer_turn_id": "01a1ea0a-38ff-7093-853e-e3071fb908db",
+    "reviewer_model_policy": "default inherited model",
+    "raw_result": {
+      "file": "visual-subcheck.md",
+      "sha256": "f3d13c536026afac36f3d9278fee9b4080363a5cc0e3bfe15fa7466ae0c04083",
+      "bytes": 2447
+    },
+    "reviewed_at": "2026-11-17T15:05:47Z",
+    "observations": [
+      "375px light: clear hierarchy, visible control boundaries, even spacing, no obstruction or horizontal overflow; title and creation time readable; long-task checkbox and delete control are vertically centered away from the first text line.",
+      "375px dark: same hierarchy and spacing; visible boundaries and readable title, time and long text; no obstruction or horizontal overflow; the long-task checkbox is not aligned with the first text line and the delete border is faint but still recognizable.",
+      "1280px light: centered main content, aligned title/card edge, clear input/filter/list separation, sufficient spacing, no obstruction or overflow; long-task checkbox and delete control remain vertically centered.",
+      "1280px dark: layout matches light desktop; hierarchy, separators and card boundaries clear, readable content and discoverable controls, no obstruction or overflow; long-task checkbox remains vertically centered and delete border is faint but recognizable."
+    ],
+    "issues": [
+      {
+        "id": "VIS-01",
+        "priority": "P3",
+        "status": "deferred",
+        "before": "Long-task checkboxes and delete controls sit vertically centered away from the first text line in all four states.",
+        "after": "No P0-P2 issue found; P3 remains a polish item and does not block AC-02."
+      }
+    ],
+    "ac02_result": "PASS: no P0-P2 issue; all four target states were actually viewed. Static screenshots do not prove click/keyboard behavior, which was covered separately by the runtime interaction checks.",
     "files": [
       { "file": "todo-375-light.png", "bytes": 44245, "sha256": "0ad6d4912cc385760df659543a70a262bac9219f058c316dfb65b0c7d504cfa7" },
       { "file": "todo-375-dark.png", "bytes": 44326, "sha256": "3e1f6506a3f870570fc50b9b37fcfc0cf7ae6901457efb3423b6a49726ac9403" },
