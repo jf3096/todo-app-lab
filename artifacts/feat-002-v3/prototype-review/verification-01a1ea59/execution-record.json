@@ -1,0 +1,43 @@
+{
+  "source_thread_id": "01a1ea59-b3b0-7492-a64f-b8869059d372",
+  "source_turn_id": "01a1ea59-b65d-7993-8b75-cd02e8e38713",
+  "source_session_file": "C:\\Users\\KSG\\.codex\\sessions\\2026\\11\\18\\rollout-2026-11-18T00-31-49-01a1ea59-b3b0-7492-a64f-b8869059d372.jsonl",
+  "execution_id": "exec-612db31d-7516-4565-863a-57015b653857",
+  "process_id": "80282",
+  "status": "completed",
+  "exit_code": 0,
+  "completed_at": "2026-11-17T16:37:19.710Z",
+  "visual_session_id": "01a1ea5e-4eb5-70f3-a5ae-0c5e7d9a79fb",
+  "cli_mode": "ephemeral",
+  "image_inputs": [
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/evidence/todo-375-light.png",
+      "width": 375,
+      "theme": "light",
+      "captured_at": "2026-11-17T14:28:52.642Z",
+      "sha256": "0ad6d4912cc385760df659543a70a262bac9219f058c316dfb65b0c7d504cfa7"
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/evidence/todo-375-dark.png",
+      "width": 375,
+      "theme": "dark",
+      "captured_at": "2026-11-17T14:28:55.399Z",
+      "sha256": "3e1f6506a3f870570fc50b9b37fcfc0cf7ae6901457efb3423b6a49726ac9403"
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/evidence/todo-1280-light.png",
+      "width": 1280,
+      "theme": "light",
+      "captured_at": "2026-11-17T14:28:58.035Z",
+      "sha256": "92465ede56521c2e465c0c07f64f4ea10da2ed19cc882a188bb4a24aa5e22dad"
+    },
+    {
+      "uri": "https://github.com/jf3096/todo-app-lab/blob/31df4340a403ead9e6893589ff80a53aab9506cf/artifacts/feat-002-v3/prototype-review/evidence/todo-1280-dark.png",
+      "width": 1280,
+      "theme": "dark",
+      "captured_at": "2026-11-17T14:29:00.184Z",
+      "sha256": "5327f518c89cffeb9e9893f193ff45d7d3c9b07bbd300d5ca8af04fc9dd2e411"
+    }
+  ],
+  "audit_boundary": "The ephemeral CLI has no separately persisted rollout or input_image log. This record relies on the real exec tool invocation, its exit status, captured stdout, and the actual visual observation file."
+}
