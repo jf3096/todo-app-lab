@@ -46,58 +46,73 @@ test('adds, persists, completes, filters, restores and deletes a task', async ({
   expect(errors).toEqual([]);
 });
 
-test.describe('task creation time', () => {
-  test.use({ timezoneId: 'Asia/Shanghai' });
+const creationTimeCases = [
+  { timezoneId: 'Asia/Shanghai', newTime: '2026/11/20 00:05', savedTime: '2024/02/29 20:34' },
+  { timezoneId: 'America/Los_Angeles', newTime: '2026/11/19 08:05', savedTime: '2024/02/29 04:34' }
+];
 
-  test('shows the local creation time and preserves the original instant after reload', async ({ page }) => {
-    const createdAt = '2026-11-19T16:05:29.000Z';
-    await page.clock.setFixedTime(new Date(createdAt));
-    await page.goto('./');
-    await addTask(page, '记录创建时间');
+for (const { timezoneId, newTime, savedTime } of creationTimeCases) {
+  test.describe(`task creation time in ${timezoneId}`, () => {
+    test.use({ timezoneId });
 
-    const item = page.getByRole('listitem');
-    const timestamp = item.getByText('创建于 2026/11/20 00:05', { exact: true });
-    await expect(timestamp).toBeVisible();
-    expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0].createdAt, storageKey))
-      .toBe(createdAt);
+    test('shows the local creation time and preserves the original instant after reload', async ({ page }) => {
+      const createdAt = '2026-11-19T16:05:29.000Z';
+      await page.clock.setFixedTime(new Date(createdAt));
+      await page.goto('./');
+      await addTask(page, '记录创建时间');
 
-    await page.clock.setFixedTime(new Date('2026-11-21T01:00:00.000Z'));
-    await page.reload();
-    await expect(timestamp).toBeVisible();
-    await item.getByRole('checkbox', { name: '记录创建时间', exact: true }).check();
-    await expect(timestamp).toBeVisible();
-    expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0].createdAt, storageKey))
-      .toBe(createdAt);
+      const item = page.getByRole('listitem');
+      const timestamp = item.getByText(`创建于 ${newTime}`, { exact: true });
+      await expect(timestamp).toBeVisible();
+      expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0].createdAt, storageKey))
+        .toBe(createdAt);
+
+      await page.clock.setFixedTime(new Date('2026-11-21T01:00:00.000Z'));
+      await page.reload();
+      await expect(timestamp).toBeVisible();
+      await item.getByRole('checkbox', { name: '记录创建时间', exact: true }).check();
+      await expect(timestamp).toBeVisible();
+      expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0].createdAt, storageKey))
+        .toBe(createdAt);
+    });
+
+    test('keeps older records without displaying missing or invalid creation times', async ({ page }, testInfo) => {
+      const invalid = [
+        { id: 'missing', text: '旧事项缺时间', completed: false },
+        { id: 'invalid', text: '旧事项时间有误', completed: false, createdAt: 'invalid-date' },
+        { id: 'null', text: '旧事项空时间', completed: false, createdAt: null },
+        { id: 'number', text: '旧事项数字时间', completed: false, createdAt: 0 },
+        { id: 'bad-day', text: '旧事项不存在的日期', completed: false, createdAt: '2026-02-30T12:00:00.000Z' },
+        { id: 'numeric-string', text: '旧事项数字字符串', completed: false, createdAt: '0' }
+      ];
+      const valid = { id: 'valid', text: '已有时间的事项', completed: false, createdAt: '2024-02-29T14:34:56+02:00' };
+      const saved = [...invalid, valid];
+      await page.addInitScript(({ key, records }) => {
+        if (localStorage.getItem(key) === null) localStorage.setItem(key, JSON.stringify(records));
+      }, { key: storageKey, records: saved });
+      await page.goto('./');
+
+      const validTime = page.getByRole('listitem').filter({ hasText: valid.text })
+        .getByText(`创建于 ${savedTime}`, { exact: true });
+      await expect(validTime).toBeVisible();
+
+      await addTask(page, '另存新事项');
+      await page.reload();
+      await expect(page.getByRole('listitem')).toHaveCount(saved.length + 1);
+      for (const { text, createdAt } of invalid) {
+        const item = page.getByRole('listitem').filter({ hasText: text });
+        await expect(item).toBeVisible();
+        const timestamps = await item.getByText(/创建于/).allTextContents();
+        expect.soft(timestamps, `${timezoneId}, ${text}, createdAt=${JSON.stringify(createdAt)}`).toEqual([]);
+      }
+      await expect(validTime).toBeVisible();
+      const records = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), storageKey);
+      expect(records.slice(0, saved.length)).toEqual(saved);
+      const screenshot = `legacy-${timezoneId.replace('/', '-')}.png`;
+      await page.screenshot({ path: testInfo.outputPath(screenshot), fullPage: true });
+    });
   });
-
-  test('keeps older records without displaying missing or invalid creation times', async ({ page }) => {
-    const saved = [
-      { id: 'missing', text: '旧事项缺时间', completed: false },
-      { id: 'invalid', text: '旧事项时间有误', completed: false, createdAt: 'invalid-date' },
-      { id: 'null', text: '旧事项空时间', completed: false, createdAt: null },
-      { id: 'number', text: '旧事项数字时间', completed: false, createdAt: 0 },
-      { id: 'valid', text: '已有时间的事项', completed: false, createdAt: '2026-11-19T12:34:56.000Z' }
-    ];
-    await page.addInitScript(({ key, records }) => {
-      if (localStorage.getItem(key) === null) localStorage.setItem(key, JSON.stringify(records));
-    }, { key: storageKey, records: saved });
-    await page.goto('./');
-
-    for (const { text } of saved.slice(0, -1)) {
-      const item = page.getByRole('listitem').filter({ hasText: text });
-      await expect(item).toBeVisible();
-      await expect(item.getByText(/创建于/)).toHaveCount(0);
-    }
-    await expect(page.getByRole('listitem').filter({ hasText: '已有时间的事项' })
-      .getByText('创建于 2026/11/19 20:34', { exact: true })).toBeVisible();
-
-    await addTask(page, '另存新事项');
-    await page.reload();
-    await expect(page.getByRole('listitem')).toHaveCount(6);
-    const records = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), storageKey);
-    expect(records.slice(0, saved.length)).toEqual(saved);
-  });
-});
+}
 
 test('treats user input as text and keeps other tasks when deleting', async ({ page }) => {
   await page.goto('./');

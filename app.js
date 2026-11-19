@@ -63,12 +63,26 @@
     showNotice();
   }
 
+  function parseCreationTime(createdAt) {
+    if (typeof createdAt !== 'string') return null;
+    const isoTimestamp = /^((?:\d{4}|[+-]\d{6})-\d{2}-\d{2})T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/;
+    const datePart = isoTimestamp.exec(createdAt)?.[1];
+    if (!datePart) return null;
+
+    // Date can roll invalid calendar days forward. Check the date before applying the offset.
+    const calendarDay = new Date(`${datePart}T00:00:00Z`);
+    if (Number.isNaN(calendarDay.getTime()) || !calendarDay.toISOString().startsWith(`${datePart}T`)) return null;
+    const instant = new Date(createdAt);
+    return Number.isNaN(instant.getTime()) ? null : instant;
+  }
+
   function renderCreationTime(createdAt) {
-    if (typeof createdAt !== 'string' || !Number.isFinite(Date.parse(createdAt))) return null;
+    const instant = parseCreationTime(createdAt);
+    if (!instant) return null;
     const time = document.createElement('time');
     time.className = 'task-created-at';
     time.dateTime = createdAt;
-    time.textContent = `创建于 ${creationTimeFormat.format(new Date(createdAt))}`;
+    time.textContent = `创建于 ${creationTimeFormat.format(instant)}`;
     return time;
   }
 
