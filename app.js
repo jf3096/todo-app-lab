@@ -6,6 +6,10 @@
   const list = document.querySelector('#task-list');
   const notice = document.querySelector('#notice');
   const filters = document.querySelector('.filters');
+  const creationTimeFormat = new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+  });
   let tasks = [];
   let filter = 'all';
   let storageWarning = '';
@@ -59,6 +63,29 @@
     showNotice();
   }
 
+  function parseCreationTime(createdAt) {
+    if (typeof createdAt !== 'string') return null;
+    const isoTimestamp = /^((?:\d{4}|[+-]\d{6})-\d{2}-\d{2})T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})$/;
+    const datePart = isoTimestamp.exec(createdAt)?.[1];
+    if (!datePart) return null;
+
+    // Date can roll invalid calendar days forward. Check the date before applying the offset.
+    const calendarDay = new Date(`${datePart}T00:00:00Z`);
+    if (Number.isNaN(calendarDay.getTime()) || !calendarDay.toISOString().startsWith(`${datePart}T`)) return null;
+    const instant = new Date(createdAt);
+    return Number.isNaN(instant.getTime()) ? null : instant;
+  }
+
+  function renderCreationTime(createdAt) {
+    const instant = parseCreationTime(createdAt);
+    if (!instant) return null;
+    const time = document.createElement('time');
+    time.className = 'task-created-at';
+    time.dateTime = createdAt;
+    time.textContent = `创建于 ${creationTimeFormat.format(instant)}`;
+    return time;
+  }
+
   function render() {
     const visible = tasks.filter(task => filter === 'all' || (filter === 'completed' ? task.completed : !task.completed));
     list.replaceChildren();
@@ -72,10 +99,16 @@
       checkbox.className = 'task-check';
       checkbox.checked = task.completed;
       checkbox.dataset.id = task.id;
+      checkbox.setAttribute('aria-label', task.text);
+      const details = document.createElement('span');
+      details.className = 'task-details';
       const text = document.createElement('span');
       text.className = 'task-text';
       text.textContent = task.text;
-      label.append(checkbox, text);
+      details.append(text);
+      const creationTime = renderCreationTime(task.createdAt);
+      if (creationTime) details.append(creationTime);
+      label.append(checkbox, details);
       const remove = document.createElement('button');
       remove.type = 'button';
       remove.className = 'delete-button';
@@ -110,7 +143,7 @@
       input.focus();
       return;
     }
-    tasks.push({ id: crypto.randomUUID(), text, completed: false });
+    tasks.push({ id: crypto.randomUUID(), text, completed: false, createdAt: new Date().toISOString() });
     filter = 'all';
     input.value = '';
     input.removeAttribute('aria-invalid');
