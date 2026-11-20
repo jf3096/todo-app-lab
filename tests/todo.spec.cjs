@@ -6,6 +6,69 @@ async function addTask(page, text) {
   await page.getByRole('button', { name: '添加', exact: true }).click();
 }
 
+test('shows and preserves the creation time of a new task', async ({ page }) => {
+  await page.goto('./');
+  await page.locator('#task-input').fill('haha');
+  await page.locator('button[type=submit]').click();
+
+  const task = page.locator('#task-list > li.task-item');
+  const time = task.locator('time');
+  await expect(task).toHaveCount(1);
+  await expect(time).toBeVisible();
+  const stored = await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0], storageKey);
+  expect(new Date(stored.createdAt).toISOString()).toBe(stored.createdAt);
+  await expect(time).toHaveAttribute('datetime', stored.createdAt);
+  const displayed = await time.textContent();
+  expect(displayed).toMatch(/创建于 .+\d/);
+  await page.reload();
+  await expect(time).toHaveText(displayed);
+  expect((await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0], storageKey)).createdAt)
+    .toBe(stored.createdAt);
+});
+
+test.describe('creation times in Shanghai', () => {
+  test.use({ timezoneId: 'Asia/Shanghai' });
+
+  test('formats a stored instant in the browser time zone to the minute', async ({ page }) => {
+    await page.addInitScript(key => localStorage.setItem(key, JSON.stringify([
+      { id: 'dated', text: '有时间', completed: false, createdAt: '2026-11-16T07:24:00.000Z' }
+    ])), storageKey);
+    await page.goto('./');
+    await expect(page.locator('#task-list time')).toHaveText('创建于 2026/11/16 15:24');
+  });
+});
+
+test('shows unknown creation time for legacy tasks without inventing one', async ({ page }) => {
+  await page.addInitScript(key => {
+    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify([
+      { id: 'legacy', text: '旧事项', completed: false }
+    ]));
+  }, storageKey);
+  await page.goto('./');
+  await expect(page.getByRole('listitem')).toContainText('创建时间未知');
+  await page.getByRole('checkbox', { name: '旧事项', exact: true }).check();
+  await page.reload();
+  await expect(page.getByRole('checkbox', { name: '旧事项', exact: true })).toBeChecked();
+  await expect(page.getByRole('listitem')).toContainText('创建时间未知');
+  expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0], storageKey))
+    .toEqual({ id: 'legacy', text: '旧事项', completed: true });
+});
+
+test('preserves invalid creation times and displays an invalid warning', async ({ page }) => {
+  await page.addInitScript(key => {
+    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify([
+      { id: 'invalid', text: '异常事项', completed: false, createdAt: 'invalid' }
+    ]));
+  }, storageKey);
+  await page.goto('./');
+  await expect(page.getByRole('listitem')).toContainText('创建时间无效');
+  await page.getByRole('checkbox', { name: '异常事项', exact: true }).check();
+  await page.reload();
+  await expect(page.getByRole('listitem')).toContainText('创建时间无效');
+  expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key))[0], storageKey))
+    .toEqual({ id: 'invalid', text: '异常事项', completed: true, createdAt: 'invalid' });
+});
+
 test('serves the app and rejects whitespace-only tasks', async ({ page }) => {
   const response = await page.goto('./');
   expect(response.status()).toBe(200);
@@ -112,6 +175,16 @@ for (const colorScheme of ['light', 'dark']) {
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await expect(page.getByRole('button', { name: '添加', exact: true })).toBeInViewport();
       await page.screenshot({ path: testInfo.outputPath(`todo-${width}-${colorScheme}.png`), fullPage: true });
+      for (const name of ['未完成', '已完成']) {
+        const button = page.getByRole('button', { name, exact: true });
+        await expect(button).toHaveCSS('border-left-style', 'solid');
+        await expect(button).not.toHaveCSS('border-left-color', 'rgba(0, 0, 0, 0)');
+      }
+      const selectedBackground = await page.getByRole('button', { name: '全部', exact: true })
+        .evaluate(button => getComputedStyle(button).backgroundColor);
+      const unselectedBackground = await page.getByRole('button', { name: '未完成', exact: true })
+        .evaluate(button => getComputedStyle(button).backgroundColor);
+      expect(selectedBackground).not.toBe(unselectedBackground);
     });
   }
 }

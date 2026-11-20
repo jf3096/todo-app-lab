@@ -72,10 +72,30 @@
       checkbox.className = 'task-check';
       checkbox.checked = task.completed;
       checkbox.dataset.id = task.id;
+      checkbox.setAttribute('aria-label', task.text);
+      const details = document.createElement('span');
+      details.className = 'task-details';
       const text = document.createElement('span');
       text.className = 'task-text';
       text.textContent = task.text;
-      label.append(checkbox, text);
+      let time;
+      if (!Object.prototype.hasOwnProperty.call(task, 'createdAt')) {
+        time = document.createElement('span');
+        time.textContent = '创建时间未知';
+      } else if (typeof task.createdAt !== 'string' || !Number.isFinite(Date.parse(task.createdAt))) {
+        time = document.createElement('span');
+        time.textContent = '创建时间无效';
+      } else {
+        time = document.createElement('time');
+        time.dateTime = task.createdAt;
+        time.textContent = `创建于 ${new Intl.DateTimeFormat('zh-CN', {
+          year: 'numeric', month: '2-digit', day: '2-digit',
+          hour: '2-digit', minute: '2-digit', hour12: false
+        }).format(new Date(task.createdAt))}`;
+      }
+      time.className = 'task-created-at';
+      details.append(text, time);
+      label.append(checkbox, details);
       const remove = document.createElement('button');
       remove.type = 'button';
       remove.className = 'delete-button';
@@ -110,7 +130,7 @@
       input.focus();
       return;
     }
-    tasks.push({ id: crypto.randomUUID(), text, completed: false });
+    tasks.push({ id: crypto.randomUUID(), text, completed: false, createdAt: new Date().toISOString() });
     filter = 'all';
     input.value = '';
     input.removeAttribute('aria-invalid');
